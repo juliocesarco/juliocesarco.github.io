@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="referrer" content="no-referrer">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
+<title></title>
+</head>
+<body class="normal pc_body">
+<header class="header"> <img class="logo" src="https://www.tiktok.com/link/static/img/tiktok_nav_logo_black.png" alt="tiktok"> </header>
+<div class="container">
+  <div class="division_img adpator_x_img"> <img src="https://play-lh.googleusercontent.com/aHDUtNWgtEhbstpo58TrxNMaaWp310EVnjh6VfOVQILEqWEOJzPKw0v7H73PS_JDNQ=s256-rw" alt="yiwen" class="image"> </div>
+  <div class="prompt_below_img">
+    <p class="prompt_below_img_word">Estás a punto de abrir un enlace externo: </p>
+    <p class="word_link"> <a class="word_link_a">JulioCesar.com.co</a> </p>
+  </div>
+  <div class="prompt_detail">
+    <p class="prompt_detail_word" id="prompt_detail_word_top">Vas a abandonar JulioCesar.com.co para visitar un sitio web externo.</p>
+  </div>
+  <div class="button_wrap open_anyway_wrap">
+    <button class="open_anyway_btn" id="button_" onclick="window.open('https://www.tiktok.com/@blogjuliocesar', '_self',  'noopener,noreferrer')">
+    <p class="button_word continue_word">Abrir de todos modos</p>
+    </button>
+  </div>
+</div>
+<style>
+  html, body {
+    height: 100%;
+    width: 100%;
+    padding:0;
+    margin:0;
+}
+
+.image {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    pointer-events:none
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+</style>
+<style>
+/*********** font ******************/
+@font-face{
+    font-family: 'Proxima Nova';
+    src : url('./../font/ProximaNova-Regular.otf');
+}
+@font-face{
+    font-family: 'Sofia Pro';
+    src : url('./../font/Sofia Pro Regular.otf');
+}
+/********* common ***********/
+
+body {
+    background-color: #fff;
+}
+.pc_body .header {
+    position: relative;
+    height: 70px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 0px #EAEAEB;
+}
+.pc_body .header .logo {
+    position: absolute;
+    width: 118px;
+    height: 42px;
+    left: 20px;
+    top: calc(50% - 42px/2);
+}
+.pc_body .container{
+    margin: 0 auto;
+    width: 987px;
+    height: 428px;
+    margin-top: 80px;
+    background: #FFFFFF;
+    box-shadow: 2px 4px 20px rgba(34, 90, 89, 0.2);
+    border-radius: 8px;
+}
+.division_img {
+    padding-top: 32px;
+    text-align: center;
+}
+
+.division_img .image {
+    height: 80px;
+}
+.prompt_below_img {
+    margin-top: 32px;
+    text-align: center;
+    font-family: Proxima Nova;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+}
+.prompt_detail {
+    margin-top: 10px;
+}
+.prompt_detail_word {
+    margin: 0 auto;
+    width: 387px;
+    font-family: Proxima Nova;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    /* or 137% */
+
+    text-align: center;
+
+    /* Text_Light/TextSecondary */
+
+    color: rgba(22, 24, 35, 0.75);
+}
+.button_wrap {
+    text-align: center;
+}
+.button_wrap button{
+    cursor: pointer;
+    width: 387px;
+    height: 48px;
+    border-radius: 2px;
+}
+.go_back_wrap {
+    margin-top: 32px;
+}
+.open_anyway_wrap {
+    margin-top: 8px;
+}
+.button_word {
+    font-family: Sofia Pro;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+}
+.go_back_btn {
+    background: #FE2C55;
+}
+.go_back_btn .button_word {
+    color: #FFFFFF;
+}
+.open_anyway_btn {
+    background: #FFFFFF;
+    border: 1px solid #d5d5d5;
+}
+.open_anyway_btn .button_word{
+    color: #161823;
+}
+
+/*********** suspicious ***************/
+.suspicious .prompt_detail_word {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FF4C3A;
+}
+.suspicious .open_anyway_wrap {
+    margin-top: 32px;
+}
+.suspicious .division_img {
+    padding-top: 79px;
+}
+
+/*********** malicious ***************/
+.malicious .division_img {
+    padding-top: 110px;
+}
+
+/*********** normal ***************/
+.normal .division_img {
+    padding-top: 81px;
+}
+.normal .open_anyway_wrap {
+    margin-top: 32px;
+}
+.normal .prompt_detail_word {
+    width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+    .pc_body .header {
+        display: none;
+    }
+    .pc_body .container {
+        width: 100%;
+        margin: 0 auto;
+        height: 100%;
+        overflow: hidden;
+        padding: 0 32px;
+        box-sizing: border-box;
+        box-shadow: none;
+        border-radius: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .pc_body .container::before {
+        display: block;
+        content: '';
+        height: 1px;
+        flex-grow: 2;
+    }
+    .pc_body .container::after {
+        display: block;
+        content: '';
+        height: 1px;
+        flex-grow: 3;
+    }
+    .pc_body .button_wrap{
+        order: 2;
+        margin: 0;
+    }
+    .pc_body .button_wrap button{
+        width: 100%;
+    }
+    .pc_body .division_img {
+        padding: 0;
+    }
+    .pc_body .prompt_detail_word {
+        width: 100%;
+    }
+    .pc_body .button_wrap {
+        margin-bottom: calc(24px + constant(safe-area-inset-bottom) * 12 / 34);
+        margin-bottom: calc(24px + env(safe-area-inset-bottom) * 12 / 34);
+    }
+}
+</style>
+</body>
+</html>
