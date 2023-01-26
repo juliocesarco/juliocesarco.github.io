@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/" xmlns:moz="http://www.mozilla.org/2006/browser/search/">
-  <ShortName>Google Cloud</ShortName>
-  <Description>Search Google Cloud resources.</Description>
+  <ShortName>Julio Cesar</ShortName>
+  <Description>Search Julio Cesar resources.</Description>
   <InputEncoding>UTF-8</InputEncoding>
   <Image width="16" height="16" type="image/x-icon">https://www.gstatic.com/devrel-devsite/prod/veced1430215d0a0c094ac0570f79b1e47a9902cf6b60d19f36522e018b212f9e/cloud/images/favicons/onecloud/favicon.ico</Image>
-  <Url type="text/html" method="get" template="https://cloud.google.com/s/results?q={searchTerms}"></Url>
+  <Url type="text/html" method="get" template="https://juliocesar.com.co/s/results?q={searchTerms}"></Url>
 </OpenSearchDescription>
