@@ -4,5 +4,5 @@
   <Description>Search Julio Cesar resources.</Description>
   <InputEncoding>UTF-8</InputEncoding>
   <Image width="16" height="16" type="image/x-icon">https://www.gstatic.com/images/branding/product/1x/contacts_2022_48dp.png</Image>
-  <Url type="text/html" method="get" template="https://juliocesar.com.co/results?q={searchTerms}"></Url>
+  <Url type="text/html" method="get" template="https://juliocesar.com.co/s/results?q={searchTerms}"></Url>
 </OpenSearchDescription>
