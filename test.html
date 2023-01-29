@@ -1,0 +1,949 @@
+<html lang="es" data-user-theme="dark" class="js-focus-visible" data-js-focus-visible="">
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width,initial-scale=1.0" name="viewport">
+<link as="font" crossorigin="anonymous" href="/fonts/google-sans/regular/latin.woff2" rel="preload">
+<link as="font" crossorigin="anonymous" href="/fonts/google-sans/bold/latin.woff2" rel="preload">
+<link href="https://web-dev.imgix.net" rel="preconnect">
+<meta content="#fff" name="theme-color">
+<title>web.dev</title>
+<meta name="description">
+<link href="https://web.dev/i18n/es/" rel="canonical">
+<link href="https://web.dev/i18n/es/" hreflang="es" rel="alternate">
+<link href="https://web.dev/i18n/ja/" hreflang="ja" rel="alternate">
+<link href="https://web.dev/i18n/ko/" hreflang="ko" rel="alternate">
+<link href="https://web.dev/i18n/pl/" hreflang="pl" rel="alternate">
+<link href="https://web.dev/i18n/pt/" hreflang="pt" rel="alternate">
+<link href="https://web.dev/i18n/ru/" hreflang="ru" rel="alternate">
+<link href="https://web.dev/i18n/zh/" hreflang="zh" rel="alternate">
+<link href="https://web.dev/" hreflang="en" rel="alternate">
+<meta content="web.dev" itemprop="name">
+<meta itemprop="description">
+<meta content="https://web-dev.imgix.net/image/FNkVSAX8UDTTQWQkKftSgGe9clO2/uZ3hQS2EPrA9csOgkoXI.png?auto=format&amp;fit=max&amp;w=1200&amp;fm=auto" itemprop="image">
+<meta content="es_ALL" property="og:locale">
+<meta content="article" property="og:type">
+<meta content="https://web.dev/i18n/es/" property="og:url">
+<meta content="web.dev" property="og:site_name">
+<meta content="web.dev" property="og:title">
+<meta property="og:description">
+<meta content="https://web-dev.imgix.net/image/FNkVSAX8UDTTQWQkKftSgGe9clO2/uZ3hQS2EPrA9csOgkoXI.png?auto=format&amp;fit=max&amp;w=1200&amp;fm=auto" property="og:image">
+<meta property="og:image:alt">
+<meta content="summary_large_image" name="twitter:card">
+<meta content="web.dev" name="twitter:title">
+<meta name="twitter:description">
+<meta content="https://web-dev.imgix.net/image/FNkVSAX8UDTTQWQkKftSgGe9clO2/uZ3hQS2EPrA9csOgkoXI.png?auto=format&amp;fit=max&amp;w=1200&amp;fm=auto" name="twitter:image">
+<link data-title="web.dev feed" href="/feed.xml" rel="alternate" type="application/atom+xml">
+<link href="/manifest.webmanifest" rel="manifest">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link href="/images/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+<link href="/images/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
+<link href="/images/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
+<link color="#0054ff" href="/images/safari-pinned-tab.svg" rel="mask-icon">
+<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.gstatic.com/recaptcha/releases/RGRQD9tdxHtnt-Bxkx9pM75S/recaptcha__es.js" crossorigin="anonymous" integrity="sha384-MtA68f4fBxoV/If42KOvaU/GKICfA+tljllJhGOnxSo1HZlhx7bJWj1apcgwruVv"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=UA-126406676-2&amp;l=dataLayer&amp;cx=c"></script><script>window.applyThemeSetting=function(e){const t=window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light",o=e||localStorage.getItem("user-color-scheme")||t,r=document.documentElement.getAttribute("data-user-theme");if(o){o!==r&&document.documentElement.setAttribute("data-user-theme",o);const e=document.querySelector("web-lighthouse-viewer article.lh-root");e&&e.classList.toggle("lh-dark","dark"===o)}},window.applyThemeSetting();</script>
+<link href="/css/next.css?v=fa3bf443" rel="stylesheet">
+<link href="/css/legacy-rollout.css?v=c92bcb17" rel="stylesheet">
+<link as="font" crossorigin="anonymous" href="/fonts/material-icons/regular.woff2" rel="preload">
+<script>function loadScript(e,t){const d=document.createElement("script");if(d.src=e,d.onload=()=>{document.dispatchEvent(new CustomEvent("scriptLoaded",{detail:{url:e}}))},t&&(d.type=t),"module"===t){d.async=!1;const t=document.createElement("link");t.rel="modulepreload",t.href=e,document.head.append(t),window.addEventListener("DOMContentLoaded",(()=>{document.head.append(d)}))}else document.head.append(d)}loadScript("/js/app.js?v=75a88715","module");let pageScripts=["/js/home.js"];document.addEventListener("scriptLoaded",(e=>{const t=e.detail.url.split("?")[0],d=pageScripts.indexOf(t);d>-1&&pageScripts.splice(d,1),0===pageScripts.length&&document.dispatchEvent(new CustomEvent("pageScriptsLoaded"))})),loadScript("/js/home.js?v=74772384","module"),loadScript("https://www.google.com/recaptcha/api.js",null);</script>
+<link rel="modulepreload" href="/js/app.js?v=75a88715">
+<link rel="modulepreload" href="/js/home.js?v=74772384">
+<script src="https://www.google.com/recaptcha/api.js"></script><script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date);</script><script src="/js/app.js?v=75a88715" type="module"></script><script src="/js/home.js?v=74772384" type="module"></script>
+<style type="text/css">
+web-profile-switcher-container {
+    align-items: center;
+    display: flex;
+    height: 100%
+}
+
+@media (min-width:865px) {
+web-profile-switcher-container {
+    margin-left: 16px
+}
+}
+.w-profile-signin {
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+    color: #202124;
+    cursor: pointer;
+    font-family: Segoe UI, system-ui, -apple-system, sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    height: 100%;
+    outline: none;
+    padding: 0 8px
+}
+
+@media (min-width:865px) {
+.w-profile-signin {
+    padding: 0 24px
+}
+}
+.w-profile-signin:hover {
+    background-color: rgba(32,33,36,.04)
+}
+.w-profile-signin:focus {
+    background-color: rgba(32,33,36,.12)
+}
+.w-profile-signin:active {
+    background-color: rgba(32,33,36,.16)
+}
+web-profile-switcher {
+    display: block;
+    margin: 0 0 0 16px
+}
+.w-profile-toggle {
+    background: #f1f3f4;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    box-shadow: none;
+    box-sizing: content-box;
+    display: flex;
+    height: auto;
+    justify-content: center;
+    min-height: 32px;
+    min-width: 32px;
+    overflow: hidden;
+    padding: 0;
+    width: auto
+}
+.w-profile-toggle:active, .w-profile-toggle:focus, .w-profile-toggle:hover {
+    box-shadow: none
+}
+.w-profile-toggle:focus {
+    border-color: rgba(0,0,0,.2)!important
+}
+@keyframes w-profile-toggle__appear {
+0% {
+opacity:0
+}
+to {
+opacity:1
+}
+}
+.w-profile-toggle__photo {
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+    animation: w-profile-toggle__appear .45s
+}
+.w-profile-dialog {
+    background: #fff;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 2px;
+    box-shadow: 0 2px 10px rgba(0,0,0,.2);
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    right: 15px;
+    top: 62px
+}
+
+@media (min-width:481px) {
+.w-profile-dialog {
+    right: 24px
+}
+}
+.w-profile-dialog__user {
+    padding: 20px
+}
+
+@media (min-width:321px) {
+.w-profile-dialog__user {
+    display: flex
+}
+}
+.w-profile-dialog__photo-container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 0 0 20px
+}
+
+@media (min-width:321px) {
+.w-profile-dialog__photo-container {
+    margin: 0 20px 0 0
+}
+}
+.w-profile-dialog__photo {
+    border-radius: 50%;
+    display: block;
+    height: 64px;
+    width: 64px
+}
+
+@media (min-width:321px) {
+.w-profile-dialog__photo {
+    height: 96px;
+    width: 96px
+}
+}
+.w-profile-dialog__details {
+    font-size: 13px;
+    line-height: normal
+}
+.w-profile-dialog__name {
+    font-weight: 500;
+    margin-bottom: 1px
+}
+.w-profile-dialog__email {
+    color: #666;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+.w-profile-dialog__privacy {
+    color: #1a73e8;
+    display: block;
+    margin: 6px 0
+}
+.w-profile-dialog__privacy:hover {
+    text-decoration: none
+}
+.w-profile-dialog__account {
+    background: #4d90fe;
+    border: 1px solid #3079ed;
+    border-radius: 2px;
+    color: #fff;
+    display: inline-block;
+    font: 13px/28px Roboto, Noto Sans, sans-serif;
+    margin: 10px 0 0;
+    padding: 0 12px;
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+    width: 100%
+}
+
+@media (min-width:321px) {
+.w-profile-dialog__account {
+    width: auto
+}
+}
+.w-profile-dialog__account:active, .w-profile-dialog__account:focus, .w-profile-dialog__account:hover {
+    outline: none;
+    text-decoration: none
+}
+.w-profile-dialog__account:after {
+    bottom: 0;
+    content: "";
+    left: 0;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: background-color .2s, border .2s;
+    z-index: 1
+}
+.w-profile-dialog__account:hover:after {
+    background-color: hsla(0,0%,100%,.08)
+}
+.w-profile-dialog__account:focus:after {
+    background-color: hsla(0,0%,100%,.12)
+}
+.w-profile-dialog__account:active:after {
+    background-color: hsla(0,0%,100%,.24)
+}
+.w-profile-dialog__controls {
+    background: #f5f5f5;
+    border-top: 1px solid rgba(0,0,0,.2);
+    display: block;
+    padding: 10px 20px
+}
+
+@media (min-width:321px) {
+.w-profile-dialog__controls {
+    align-items: center;
+    display: flex;
+    justify-content: space-between
+}
+}
+.w-profile-dialog__button {
+    background: #f8f8f8;
+    border: 1px solid #c6c6c6;
+    border-radius: 2px;
+    box-shadow: none;
+    color: #666;
+    display: block;
+    font: 13px/28px Roboto, Noto Sans, sans-serif;
+    height: auto;
+    margin: 0;
+    padding: 0 12px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    width: 100%
+}
+
+@media (min-width:321px) {
+.w-profile-dialog__button {
+    width: auto
+}
+}
+.w-profile-dialog__button:not(:last-of-type) {
+    margin-bottom: 8px
+}
+
+@media (min-width:321px) {
+.w-profile-dialog__button:not(:last-of-type) {
+    margin: 0
+}
+}
+.w-profile-dialog__button:focus {
+    background: #f8f8f8;
+    outline: none;
+    text-decoration: none
+}
+.w-profile-dialog__button:after {
+    bottom: 0;
+    content: "";
+    left: 0;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: background-color .2s, border .2s;
+    z-index: 1
+}
+.w-profile-dialog__button:hover:after {
+    background-color: rgba(0,0,0,.04)
+}
+.w-profile-dialog__button:focus:after {
+    background-color: rgba(0,0,0,.08)
+}
+.w-profile-dialog__button:active:after {
+    background-color: rgba(0,0,0,.1)
+}
+</style>
+<style id="inert-style">
+[inert] {
+  pointer-events: none;
+  cursor: default;
+}
+
+[inert], [inert] * {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+</style>
+<script src="https://www.googletagmanager.com/gtag/js?id=G-18JR3Q8PJ8"></script>
+</head>
+<body class="">
+<web-snackbar-container><!---->
+  <web-snackbar stacked=""><!---->
+    <div class="web-snackbar__surface flow"><!--?lit$252287762$-->
+      <div class="web-snackbar__label" role="status"> web.dev uses cookies to deliver and enhance the quality of its services
+        and to analyze traffic. If you agree, cookies are also used to serve
+        advertising and to personalize the content and advertisements that you
+        see. <a href="https://policies.google.com/technologies/cookies"> Learn more. </a> </div>
+      <div class="web-snackbar__actions cluster gutter-base">
+        <button class="button button--action"> Agree </button>
+        <button class="button">No thanks</button>
+      </div>
+    </div>
+  </web-snackbar>
+</web-snackbar-container>
+<a class="skip-link button" data-type="primary" href="#main">Skip to content</a>
+<web-header class="site-header" role="banner">
+  <div class="cluster gutter-base">
+    <button class="icon-button tooltip color-core-text md:hidden-yes" aria-labelledby="menu-button-toolip" data-alignment="right" data-open-drawer-button="">
+    <svg viewBox="0 0 24 24" height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="none"></path>
+      <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+    </svg>
+    <span class="tooltip__content" id="menu-button-toolip">Open menu</span></button>
+    <a class="site-header__brand brand" href="/">
+    <svg viewBox="0 0 118 29" aria-label="web.dev" fill="none" height="29" role="img" width="118" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 23.2123C0 21.5272 1.36602 20.1611 3.05114 20.1611H19.3239C21.009 20.1611 22.375 21.5272 22.375 23.2123C22.375 24.8974 21.009 26.2634 19.3239 26.2634H3.05114C1.36602 26.2634 0 24.8974 0 23.2123Z" fill="#66CCFF"></path>
+      <path d="M0.893659 4.78184C2.0852 3.5903 4.01708 3.5903 5.20861 4.78184L13.345 12.9182C14.5365 14.1097 14.5365 16.0416 13.345 17.2332L5.20861 25.3695C4.01708 26.5611 2.0852 26.5611 0.893659 25.3695C-0.297886 24.178 -0.297886 22.2461 0.893659 21.0546L6.51297 15.4353C6.71155 15.2367 6.71155 14.9147 6.51297 14.7161L0.893659 9.09679C-0.297886 7.90526 -0.297886 5.97338 0.893659 4.78184Z" clip-rule="evenodd" fill="#0066FF" fill-rule="evenodd"></path>
+      <path d="M10.4172 20.1611L5.20861 25.3697C4.01708 26.5613 2.0852 26.5613 0.893659 25.3697C-0.297886 24.1782 -0.297886 22.2463 0.893659 21.0548L1.78733 20.1611H10.4172Z" fill="#CC66FF"></path>
+      <path d="M19.3239 26.2634C21.009 26.2634 22.375 24.8974 22.375 23.2123C22.375 21.5272 21.009 20.1611 19.3239 20.1611C17.6388 20.1611 16.2727 21.5272 16.2727 23.2123C16.2727 24.8974 17.6388 26.2634 19.3239 26.2634Z" fill="#0066FF"></path>
+      <path d="M38.22 26.048C37.8333 26.048 37.4833 25.9613 37.17 25.788C36.8633 25.608 36.6333 25.3913 36.48 25.138H36.44V25.888H35.63V18.728H36.48V20.838L36.44 21.548H36.48C36.6333 21.288 36.8633 21.0713 37.17 20.898C37.4833 20.718 37.8333 20.628 38.22 20.628C38.6733 20.628 39.0866 20.7447 39.46 20.978C39.8333 21.2113 40.1266 21.5347 40.34 21.948C40.5533 22.3613 40.66 22.8247 40.66 23.338C40.66 23.858 40.5533 24.3247 40.34 24.738C40.1266 25.1447 39.8333 25.4647 39.46 25.698C39.0866 25.9313 38.6733 26.048 38.22 26.048ZM38.12 25.278C38.4133 25.278 38.69 25.198 38.95 25.038C39.21 24.878 39.4166 24.6513 39.57 24.358C39.73 24.058 39.81 23.718 39.81 23.338C39.81 22.958 39.73 22.6213 39.57 22.328C39.4166 22.028 39.21 21.798 38.95 21.638C38.69 21.478 38.4133 21.398 38.12 21.398C37.8266 21.398 37.55 21.478 37.29 21.638C37.03 21.798 36.8233 22.0247 36.67 22.318C36.5166 22.6113 36.44 22.9513 36.44 23.338C36.44 23.7247 36.5166 24.0647 36.67 24.358C36.8233 24.6513 37.03 24.878 37.29 25.038C37.55 25.198 37.8266 25.278 38.12 25.278Z"></path>
+      <path d="M43.0103 25.568L40.9003 20.788H41.8203L43.4203 24.578H43.4403L44.9803 20.788H45.9003L42.7503 28.048H41.8703L43.0103 25.568Z"></path>
+      <path d="M52.2654 26.048C51.5721 26.048 50.9421 25.8847 50.3754 25.558C49.8088 25.2313 49.3621 24.7847 49.0354 24.218C48.7154 23.6447 48.5554 23.008 48.5554 22.308C48.5554 21.608 48.7154 20.9747 49.0354 20.408C49.3621 19.8347 49.8088 19.3847 50.3754 19.058C50.9421 18.7313 51.5721 18.568 52.2654 18.568C52.7988 18.568 53.2854 18.6713 53.7254 18.878C54.1721 19.078 54.5588 19.3647 54.8854 19.738L54.2754 20.328C54.0021 20.0013 53.7021 19.7613 53.3754 19.608C53.0554 19.4547 52.6854 19.378 52.2654 19.378C51.7454 19.378 51.2688 19.5013 50.8354 19.748C50.4021 19.988 50.0554 20.3313 49.7954 20.778C49.5421 21.218 49.4154 21.728 49.4154 22.308C49.4154 22.888 49.5421 23.4013 49.7954 23.848C50.0554 24.288 50.4021 24.6313 50.8354 24.878C51.2688 25.118 51.7454 25.238 52.2654 25.238C53.1321 25.238 53.8688 24.8813 54.4754 24.168L55.0954 24.768C54.7621 25.1613 54.3521 25.4747 53.8654 25.708C53.3788 25.9347 52.8454 26.048 52.2654 26.048Z"></path>
+      <path d="M56.0499 18.728H56.8999V20.838L56.8599 21.538H56.8999C57.0399 21.278 57.2599 21.0613 57.5599 20.888C57.8666 20.7147 58.1999 20.628 58.5599 20.628C59.1799 20.628 59.6532 20.8113 59.9799 21.178C60.3066 21.538 60.4699 22.018 60.4699 22.618V25.888H59.6199V22.748C59.6199 22.288 59.5032 21.948 59.2699 21.728C59.0366 21.508 58.7332 21.398 58.3599 21.398C58.0932 21.398 57.8466 21.478 57.6199 21.638C57.3999 21.798 57.2232 22.0047 57.0899 22.258C56.9632 22.5113 56.8999 22.7747 56.8999 23.048V25.888H56.0499V18.728Z"></path>
+      <path d="M61.6944 20.788H62.5044V21.608H62.5444C62.6444 21.328 62.8378 21.098 63.1244 20.918C63.4111 20.7313 63.7111 20.638 64.0244 20.638C64.2578 20.638 64.4578 20.6713 64.6244 20.738V21.658C64.4111 21.5513 64.1711 21.498 63.9044 21.498C63.6578 21.498 63.4311 21.568 63.2244 21.708C63.0178 21.848 62.8511 22.038 62.7244 22.278C62.6044 22.5113 62.5444 22.7647 62.5444 23.038V25.888H61.6944V20.788Z"></path>
+      <path d="M67.4917 26.048C66.9917 26.048 66.5417 25.928 66.1417 25.688C65.7417 25.448 65.4284 25.1213 65.2017 24.708C64.9817 24.2947 64.8717 23.838 64.8717 23.338C64.8717 22.838 64.9817 22.3813 65.2017 21.968C65.4284 21.5547 65.7417 21.228 66.1417 20.988C66.5417 20.748 66.9917 20.628 67.4917 20.628C67.9917 20.628 68.4417 20.748 68.8417 20.988C69.2417 21.228 69.5517 21.5547 69.7717 21.968C69.9984 22.3813 70.1117 22.838 70.1117 23.338C70.1117 23.838 69.9984 24.2947 69.7717 24.708C69.5517 25.1213 69.2417 25.448 68.8417 25.688C68.4417 25.928 67.9917 26.048 67.4917 26.048ZM67.4917 25.278C67.805 25.278 68.095 25.2013 68.3617 25.048C68.635 24.888 68.8517 24.6613 69.0117 24.368C69.1784 24.0747 69.2617 23.7313 69.2617 23.338C69.2617 22.9447 69.1784 22.6013 69.0117 22.308C68.8517 22.0147 68.635 21.7913 68.3617 21.638C68.095 21.478 67.805 21.398 67.4917 21.398C67.1784 21.398 66.885 21.478 66.6117 21.638C66.3384 21.7913 66.1184 22.0147 65.9517 22.308C65.7917 22.6013 65.7117 22.9447 65.7117 23.338C65.7117 23.7313 65.7917 24.0747 65.9517 24.368C66.1184 24.6613 66.3384 24.888 66.6117 25.048C66.885 25.2013 67.1784 25.278 67.4917 25.278Z"></path>
+      <path d="M71.0011 20.788H71.8111V21.538H71.8511C71.9977 21.278 72.2177 21.0613 72.5111 20.888C72.8044 20.7147 73.1144 20.628 73.4411 20.628C73.8144 20.628 74.1377 20.718 74.4111 20.898C74.6911 21.078 74.8911 21.318 75.0111 21.618C75.1911 21.318 75.4277 21.078 75.7211 20.898C76.0211 20.718 76.3677 20.628 76.7611 20.628C77.3477 20.628 77.7877 20.808 78.0811 21.168C78.3811 21.5213 78.5311 22.0047 78.5311 22.618V25.888H77.6911V22.748C77.6911 22.2747 77.5944 21.9313 77.4011 21.718C77.2077 21.5047 76.9211 21.398 76.5411 21.398C76.2877 21.398 76.0577 21.4713 75.8511 21.618C75.6444 21.7647 75.4811 21.9613 75.3611 22.208C75.2477 22.4547 75.1911 22.7213 75.1911 23.008V25.888H74.3411V22.758C74.3411 22.278 74.2444 21.9313 74.0511 21.718C73.8577 21.5047 73.5744 21.398 73.2011 21.398C72.9477 21.398 72.7177 21.4747 72.5111 21.628C72.3044 21.7747 72.1411 21.9747 72.0211 22.228C71.9077 22.4747 71.8511 22.7413 71.8511 23.028V25.888H71.0011V20.788Z"></path>
+      <path d="M82.0211 26.048C81.5344 26.048 81.0977 25.9313 80.7111 25.698C80.3244 25.4647 80.0211 25.1447 79.8011 24.738C79.5877 24.3247 79.4811 23.8613 79.4811 23.348C79.4811 22.8547 79.5811 22.4013 79.7811 21.988C79.9877 21.5747 80.2777 21.2447 80.6511 20.998C81.0244 20.7513 81.4577 20.628 81.9511 20.628C82.4511 20.628 82.8844 20.7413 83.2511 20.968C83.6177 21.188 83.8977 21.4947 84.0911 21.888C84.2911 22.2813 84.3911 22.7313 84.3911 23.238C84.3911 23.338 84.3811 23.4247 84.3611 23.498H80.3311C80.3511 23.8847 80.4444 24.2113 80.6111 24.478C80.7777 24.7447 80.9877 24.9447 81.2411 25.078C81.5011 25.2113 81.7711 25.278 82.0511 25.278C82.7044 25.278 83.2077 24.9713 83.5611 24.358L84.2811 24.708C84.0611 25.1213 83.7611 25.448 83.3811 25.688C83.0077 25.928 82.5544 26.048 82.0211 26.048ZM83.4911 22.798C83.4777 22.5847 83.4177 22.3713 83.3111 22.158C83.2044 21.9447 83.0344 21.7647 82.8011 21.618C82.5744 21.4713 82.2877 21.398 81.9411 21.398C81.5411 21.398 81.2011 21.528 80.9211 21.788C80.6477 22.0413 80.4677 22.378 80.3811 22.798H83.4911Z"></path>
+      <path d="M87.8801 18.728H90.0401C90.7734 18.728 91.4134 18.8813 91.9601 19.188C92.5067 19.488 92.9267 19.908 93.2201 20.448C93.5134 20.988 93.6601 21.608 93.6601 22.308C93.6601 23.008 93.5134 23.628 93.2201 24.168C92.9267 24.708 92.5067 25.1313 91.9601 25.438C91.4134 25.738 90.7734 25.888 90.0401 25.888H87.8801V18.728ZM90.0401 25.078C90.8867 25.078 91.5567 24.8347 92.0501 24.348C92.5501 23.8613 92.8001 23.1813 92.8001 22.308C92.8001 21.4347 92.5501 20.7547 92.0501 20.268C91.5567 19.7813 90.8867 19.538 90.0401 19.538H88.7201V25.078H90.0401Z"></path>
+      <path d="M96.8648 26.048C96.3782 26.048 95.9415 25.9313 95.5548 25.698C95.1682 25.4647 94.8648 25.1447 94.6448 24.738C94.4315 24.3247 94.3248 23.8613 94.3248 23.348C94.3248 22.8547 94.4248 22.4013 94.6248 21.988C94.8315 21.5747 95.1215 21.2447 95.4948 20.998C95.8682 20.7513 96.3015 20.628 96.7948 20.628C97.2948 20.628 97.7282 20.7413 98.0948 20.968C98.4615 21.188 98.7415 21.4947 98.9348 21.888C99.1348 22.2813 99.2348 22.7313 99.2348 23.238C99.2348 23.338 99.2248 23.4247 99.2048 23.498H95.1748C95.1948 23.8847 95.2882 24.2113 95.4548 24.478C95.6215 24.7447 95.8315 24.9447 96.0848 25.078C96.3448 25.2113 96.6148 25.278 96.8948 25.278C97.5482 25.278 98.0515 24.9713 98.4048 24.358L99.1248 24.708C98.9048 25.1213 98.6048 25.448 98.2248 25.688C97.8515 25.928 97.3982 26.048 96.8648 26.048ZM98.3348 22.798C98.3215 22.5847 98.2615 22.3713 98.1548 22.158C98.0482 21.9447 97.8782 21.7647 97.6448 21.618C97.4182 21.4713 97.1315 21.398 96.7848 21.398C96.3848 21.398 96.0448 21.528 95.7648 21.788C95.4915 22.0413 95.3115 22.378 95.2248 22.798H98.3348Z"></path>
+      <path d="M99.5719 20.788H100.482L102.062 24.888H102.082L103.682 20.788H104.572L102.492 25.888H101.632L99.5719 20.788Z"></path>
+      <path d="M105.439 18.728H107.859C108.252 18.728 108.619 18.818 108.959 18.998C109.299 19.178 109.569 19.4313 109.769 19.758C109.975 20.078 110.079 20.4413 110.079 20.848C110.079 21.1813 110.002 21.4913 109.849 21.778C109.702 22.0647 109.495 22.3047 109.229 22.498C108.969 22.6913 108.679 22.8213 108.359 22.888L108.339 22.918L110.359 25.848V25.888H109.359L107.409 22.968H106.279V25.888H105.439V18.728ZM107.809 22.178C108.055 22.178 108.285 22.1213 108.499 22.008C108.719 21.8947 108.892 21.738 109.019 21.538C109.152 21.3313 109.219 21.1013 109.219 20.848C109.219 20.628 109.162 20.418 109.049 20.218C108.935 20.018 108.775 19.8547 108.569 19.728C108.369 19.6013 108.135 19.538 107.869 19.538H106.279V22.178H107.809Z"></path>
+      <path d="M113.3 26.048C112.814 26.048 112.377 25.9313 111.99 25.698C111.604 25.4647 111.3 25.1447 111.08 24.738C110.867 24.3247 110.76 23.8613 110.76 23.348C110.76 22.8547 110.86 22.4013 111.06 21.988C111.267 21.5747 111.557 21.2447 111.93 20.998C112.304 20.7513 112.737 20.628 113.23 20.628C113.73 20.628 114.164 20.7413 114.53 20.968C114.897 21.188 115.177 21.4947 115.37 21.888C115.57 22.2813 115.67 22.7313 115.67 23.238C115.67 23.338 115.66 23.4247 115.64 23.498H111.61C111.63 23.8847 111.724 24.2113 111.89 24.478C112.057 24.7447 112.267 24.9447 112.52 25.078C112.78 25.2113 113.05 25.278 113.33 25.278C113.984 25.278 114.487 24.9713 114.84 24.358L115.56 24.708C115.34 25.1213 115.04 25.448 114.66 25.688C114.287 25.928 113.834 26.048 113.3 26.048ZM114.77 22.798C114.757 22.5847 114.697 22.3713 114.59 22.158C114.484 21.9447 114.314 21.7647 114.08 21.618C113.854 21.4713 113.567 21.398 113.22 21.398C112.82 21.398 112.48 21.528 112.2 21.788C111.927 22.0413 111.747 22.378 111.66 22.798H114.77Z"></path>
+      <path d="M116.665 18.728H117.515V25.888H116.665V18.728Z"></path>
+      <path d="M35.126 3.708H36.692L38.888 10.962H38.906L41.21 3.708H42.794L45.116 10.944H45.134L47.312 3.708H48.86L45.89 12.888H44.342L41.966 5.562L39.608 12.888H38.078L35.126 3.708Z"></path>
+      <path d="M54.0364 13.176C53.1604 13.176 52.3744 12.966 51.6784 12.546C50.9824 12.126 50.4364 11.55 50.0404 10.818C49.6564 10.074 49.4644 9.24 49.4644 8.316C49.4644 7.428 49.6444 6.612 50.0044 5.868C50.3764 5.124 50.8984 4.53 51.5704 4.086C52.2424 3.642 53.0224 3.42 53.9104 3.42C54.8104 3.42 55.5904 3.624 56.2504 4.032C56.9104 4.428 57.4144 4.98 57.7624 5.688C58.1224 6.396 58.3024 7.206 58.3024 8.118C58.3024 8.298 58.2844 8.454 58.2484 8.586H50.9944C51.0304 9.282 51.1984 9.87 51.4984 10.35C51.7984 10.83 52.1764 11.19 52.6324 11.43C53.1004 11.67 53.5864 11.79 54.0904 11.79C55.2664 11.79 56.1724 11.238 56.8084 10.134L58.1044 10.764C57.7084 11.508 57.1684 12.096 56.4844 12.528C55.8124 12.96 54.9964 13.176 54.0364 13.176ZM56.6824 7.326C56.6584 6.942 56.5504 6.558 56.3584 6.174C56.1664 5.79 55.8604 5.466 55.4404 5.202C55.0324 4.938 54.5164 4.806 53.8924 4.806C53.1724 4.806 52.5604 5.04 52.0564 5.508C51.5644 5.964 51.2404 6.57 51.0844 7.326H56.6824Z"></path>
+      <path d="M64.755 13.176C64.059 13.176 63.429 13.02 62.865 12.708C62.313 12.384 61.899 11.994 61.623 11.538H61.551V12.888H60.093V0H61.623V3.798L61.551 5.076H61.623C61.899 4.608 62.313 4.218 62.865 3.906C63.429 3.582 64.059 3.42 64.755 3.42C65.571 3.42 66.315 3.63 66.987 4.05C67.659 4.47 68.187 5.052 68.571 5.796C68.955 6.54 69.147 7.374 69.147 8.298C69.147 9.234 68.955 10.074 68.571 10.818C68.187 11.55 67.659 12.126 66.987 12.546C66.315 12.966 65.571 13.176 64.755 13.176ZM64.575 11.79C65.103 11.79 65.601 11.646 66.069 11.358C66.537 11.07 66.909 10.662 67.185 10.134C67.473 9.594 67.617 8.982 67.617 8.298C67.617 7.614 67.473 7.008 67.185 6.48C66.909 5.94 66.537 5.526 66.069 5.238C65.601 4.95 65.103 4.806 64.575 4.806C64.047 4.806 63.549 4.95 63.081 5.238C62.613 5.526 62.241 5.934 61.965 6.462C61.689 6.99 61.551 7.602 61.551 8.298C61.551 8.994 61.689 9.606 61.965 10.134C62.241 10.662 62.613 11.07 63.081 11.358C63.549 11.646 64.047 11.79 64.575 11.79Z"></path>
+      <path d="M71.9291 12.996C71.6051 12.996 71.3291 12.888 71.1011 12.672C70.8851 12.444 70.7771 12.168 70.7771 11.844C70.7771 11.532 70.8851 11.268 71.1011 11.052C71.3291 10.824 71.6051 10.71 71.9291 10.71C72.2411 10.71 72.5051 10.824 72.7211 11.052C72.9491 11.268 73.0631 11.532 73.0631 11.844C73.0631 12.168 72.9491 12.444 72.7211 12.672C72.5051 12.888 72.2411 12.996 71.9291 12.996Z"></path>
+      <path d="M79.0981 13.176C78.2821 13.176 77.5382 12.966 76.8661 12.546C76.2061 12.126 75.6841 11.55 75.3001 10.818C74.9161 10.074 74.7241 9.234 74.7241 8.298C74.7241 7.374 74.9161 6.54 75.3001 5.796C75.6841 5.052 76.2061 4.47 76.8661 4.05C77.5382 3.63 78.2821 3.42 79.0981 3.42C79.8061 3.42 80.4361 3.582 80.9881 3.906C81.5401 4.218 81.9601 4.608 82.2481 5.076H82.3201L82.2481 3.798V0H83.7781V12.888H82.3201V11.538H82.2481C81.9601 11.994 81.5401 12.384 80.9881 12.708C80.4361 13.02 79.8061 13.176 79.0981 13.176ZM79.2781 11.79C79.8181 11.79 80.3161 11.646 80.7721 11.358C81.2401 11.07 81.6121 10.662 81.8881 10.134C82.1761 9.606 82.3201 8.994 82.3201 8.298C82.3201 7.602 82.1761 6.99 81.8881 6.462C81.6121 5.934 81.2401 5.526 80.7721 5.238C80.3161 4.95 79.8181 4.806 79.2781 4.806C78.7501 4.806 78.2521 4.95 77.7841 5.238C77.3161 5.526 76.9382 5.94 76.6502 6.48C76.3742 7.008 76.2361 7.614 76.2361 8.298C76.2361 8.982 76.3742 9.594 76.6502 10.134C76.9382 10.662 77.3161 11.07 77.7841 11.358C78.2521 11.646 78.7501 11.79 79.2781 11.79Z"></path>
+      <path d="M90.0364 13.176C89.1604 13.176 88.3744 12.966 87.6784 12.546C86.9824 12.126 86.4364 11.55 86.0404 10.818C85.6564 10.074 85.4644 9.24 85.4644 8.316C85.4644 7.428 85.6444 6.612 86.0044 5.868C86.3764 5.124 86.8984 4.53 87.5704 4.086C88.2424 3.642 89.0224 3.42 89.9104 3.42C90.8104 3.42 91.5904 3.624 92.2504 4.032C92.9104 4.428 93.4144 4.98 93.7624 5.688C94.1224 6.396 94.3024 7.206 94.3024 8.118C94.3024 8.298 94.2844 8.454 94.2484 8.586H86.9944C87.0304 9.282 87.1984 9.87 87.4984 10.35C87.7984 10.83 88.1764 11.19 88.6324 11.43C89.1004 11.67 89.5864 11.79 90.0904 11.79C91.2664 11.79 92.1724 11.238 92.8084 10.134L94.1044 10.764C93.7084 11.508 93.1684 12.096 92.4844 12.528C91.8124 12.96 90.9964 13.176 90.0364 13.176ZM92.6824 7.326C92.6584 6.942 92.5504 6.558 92.3584 6.174C92.1664 5.79 91.8604 5.466 91.4404 5.202C91.0324 4.938 90.5164 4.806 89.8924 4.806C89.1724 4.806 88.5604 5.04 88.0564 5.508C87.5644 5.964 87.2404 6.57 87.0844 7.326H92.6824Z"></path>
+      <path d="M94.9092 3.708H96.5472L99.3912 11.088H99.4272L102.307 3.708H103.909L100.165 12.888H98.6172L94.9092 3.708Z"></path>
+    </svg>
+    </a></div>
+  <web-navigation-drawer type="standard" tabindex="-1">
+    <nav aria-label="main navigation" class="site-header__nav" data-drawer-container=""><a data-category="Site-Wide Custom Events" data-label="Tab: About" class="site-header__link" href="/about/"> About </a><a data-category="Site-Wide Custom Events" data-label="Tab: Blog" class="site-header__link" href="/blog/"> Blog </a><a data-category="Site-Wide Custom Events" data-label="Tab: Learn" class="site-header__link" href="/learn/"> Aprender </a><a data-category="Site-Wide Custom Events" data-label="Tab: Explore" class="site-header__link" href="/explore/"> Explorar </a><a data-category="Site-Wide Custom Events" data-label="Tab: Patterns" class="site-header__link" href="/patterns/"> patronas </a><a data-category="Site-Wide Custom Events" data-label="Tab: Case Studies" class="site-header__link" href="/tags/case-study/"> Case studies </a>
+      <button class="icon-button tooltip color-core-text md:hidden-yes" data-drawer-close-button="">
+      <svg viewBox="0 0 24 24" aria-label="close" class="icon" height="24" role="img" width="24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path>
+      </svg>
+      <span class="tooltip__content">Cerrar</span></button>
+    </nav>
+    <!----></web-navigation-drawer>
+  <div class="site-header__actions cluster">
+    <div class="site-header__search">
+      <web-search i18n="{&quot;search&quot;:{&quot;en&quot;:&quot;Search&quot;},&quot;open_search&quot;:{&quot;en&quot;:&quot;Open search&quot;},&quot;all_articles&quot;:{&quot;en&quot;:&quot;All articles&quot;},&quot;close_search&quot;:{&quot;en&quot;:&quot;Close search&quot;}}" results-id="search-main-results"><!---->
+        <button class="web-search__open-btn icon-button color-mid-text" aria-label="Open search">
+        <svg class="web-search__search-icon" xmlns="http://www.w3.org/2000/svg" height="24" width="24" aria-hidden="true">
+          <path d="M0 0h24v24H0z" fill="none"></path>
+          <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+        </svg>
+        </button>
+        <div class="web-search__input-wrapper" role="combobox" aria-controls="web-search__input" aria-haspopup="listbox" aria-expanded="false" aria-owns="search-main-results-list">
+          <input id="web-search__input" class="web-search__input" type="text" role="searchbox" autocomplete="off" aria-autocomplete="list" aria-controls="search-main-results-list" aria-label="All articles" placeholder="Search">
+        </div>
+      </web-search>
+      <web-search-results id="search-main-results"><!---->
+        <div role="listbox" aria-hidden="true" id="search-main-results-list"></div>
+      </web-search-results>
+    </div>
+  </div>
+  <!----></web-header>
+<main id="main">
+  <div class="homepage">
+    <header class="hero bg-core-bg">
+      <div class="wrapper">
+        <div class="hero__columns switcher">
+          <div><span aria-hidden="true" class="hero__eyebrow">About web.dev</span>
+            <div class="hero__content flow"><img alt="" aria-hidden="true" class="hero__decor" fetchpriority="high" height="210" src="https://web-dev.imgix.net/image/VbAJIREinuYvovrBzzvEyZOpw5w1/B9KWrQo39fXbKSVYjz1e.svg" width="330">
+              <h1 class="hero__title">Let's build the future of the web, together</h1>
+              <p>Take advantage of the latest modern technologies to build amazing web experiences for everyone.</p>
+              <a class="button" data-type="primary" href="/about/">Learn more</a></div>
+          </div>
+          <div class="flow"><a class="feature-card" data-theme="" data-treatment="illustration"> <span class="feature-card__eyebrow"></span>
+            <h3 class="feature-card__title"></h3>
+            </a><a class="feature-card" data-treatment="bg-image" href="/mishipay/"> <span class="feature-card__eyebrow">Case study</span>
+            <h3 class="feature-card__title">MishiPay's PWA increases transactions 10 times and saves 2.5 years of queuing</h3>
+            <img sizes="(min-width: 570px) 570px, calc(100vw - 48px)" src="https://web-dev.imgix.net/image/8WbTDNrhLsU0El80frMBGE4eMCD3/CZo4R87iOBYiRpIq6NcP.jpg?auto=format" srcset="https://web-dev.imgix.net/image/8WbTDNrhLsU0El80frMBGE4eMCD3/CZo4R87iOBYiRpIq6NcP.jpg?auto=format&amp;w=200 200w,     https://web-dev.imgix.net/image/8WbTDNrhLsU0El80frMBGE4eMCD3/CZo4R87iOBYiRpIq6NcP.jpg?auto=format&amp;w=228 228w,     https://web-dev.imgix.net/image/8WbTDNrhLsU0El80frMBGE4eMCD3/CZo4R87iOBYiRpIq6NcP.jpg?auto=format&amp;w=260 260w,     https://web-dev.imgix.net/image/8WbTDNrhLsU0El80frMBGE4eMCD3/CZo4R87iOBYiRpIq6NcP.jpg?auto=format&amp;w=296 296w,     https://web-dev.imgix.net/image/8WbTDNrhLsU0El80frMBGE4eMCD3/CZo4R87iOBYiRpIq6NcP.jpg?auto=format&amp;w=338 338w,     https://web-dev.imgix.net/image/8WbTDNrhLsU0El80frMBGE4eMCD3/CZo4R87iOBYiRpIq6NcP.jpg?auto=format&amp;w=385 385w,     https://web-dev.imgix.net/image/8WbTDNrhLsU0El80frMBGE4eMCD3/CZo4R87iOBYiRpIq6NcP.jpg?auto=format&amp;w=439 439w,     https://web-dev.imgix.net/image/8WbTDNrhLsU0El80frMBGE4eMCD3/CZo4R87iOBYiRpIq6NcP.jpg?auto=format&amp;w=500 500w,     https://web-dev.imgix.net/image/8WbTDNrhLsU0El80frMBGE4eMCD3/CZo4R87iOBYiRpIq6NcP.jpg?auto=format&amp;w=571 571w,     https://web-dev.imgix.net/image/8WbTDNrhLsU0El80frMBGE4eMCD3/CZo4R87iOBYiRpIq6NcP.jpg?auto=format&amp;w=650 650w,     https://web-dev.imgix.net/image/8WbTDNrhLsU0El80frMBGE4eMCD3/CZo4R87iOBYiRpIq6NcP.jpg?auto=format&amp;w=741 741w,     https://web-dev.imgix.net/image/8WbTDNrhLsU0El80frMBGE4eMCD3/CZo4R87iOBYiRpIq6NcP.jpg?auto=format&amp;w=845 845w,     https://web-dev.imgix.net/image/8WbTDNrhLsU0El80frMBGE4eMCD3/CZo4R87iOBYiRpIq6NcP.jpg?auto=format&amp;w=964 964w,     https://web-dev.imgix.net/image/8WbTDNrhLsU0El80frMBGE4eMCD3/CZo4R87iOBYiRpIq6NcP.jpg?auto=format&amp;w=1098 1098w,     https://web-dev.imgix.net/image/8WbTDNrhLsU0El80frMBGE4eMCD3/CZo4R87iOBYiRpIq6NcP.jpg?auto=format&amp;w=1140 1140w" alt="" class="feature-card__background" decoding="async" height="330" width="570"> </a></div>
+        </div>
+      </div>
+    </header>
+    <div class="homepage__section bg-mid-bg">
+      <div class="wrapper">
+        <div class="headline all-center flow">
+          <h2 class="headline__title"></h2>
+          <p></p>
+        </div>
+        <div class="homepage__news gap-top-size-2"></div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="pad-block-size-1 repel">
+        <h2 class="text-size-3" id="themes">Themes</h2>
+        <web-learn-filter all="all" filters="[]"><!---->
+          <div class="w-chips cluster"><!--?lit$252287762$--><!---->
+            <button type="button" class="pill w-chip w-chip__active" data-state="active"> 
+            <!--?lit$252287762$-->all </button>
+            <!----></div>
+        </web-learn-filter>
+      </div>
+    </div>
+    <div id="learn__collections"></div>
+    <section class="homepage__developers region bg-mid-bg">
+      <div class="wrapper flow all-center">
+        <div>
+          <svg viewBox="0 0 238 36" fill="currentColor" height="36" width="238" xmlns="http://www.w3.org/2000/svg">
+            <path d="M54.5001 26.3499C53.4194 26.3768 52.3446 26.1822 51.3419 25.7781C50.3393 25.3739 49.43 24.7688 48.6701 23.9999C47.8956 23.2332 47.2866 22.3159 46.8806 21.3045C46.4747 20.2932 46.2805 19.2093 46.3101 18.1199C46.3101 15.7799 47.1001 13.8199 48.6701 12.2499C49.43 11.4811 50.3393 10.8759 51.3419 10.4718C52.3446 10.0676 53.4194 9.873 54.5001 9.89992C56.8701 9.89992 58.8001 10.7499 60.2801 12.4699L58.8801 13.8299C58.3592 13.175 57.6909 12.6525 56.9298 12.3049C56.1686 11.9574 55.3361 11.7946 54.5001 11.8299C53.6937 11.812 52.8919 11.9568 52.1428 12.2558C51.3937 12.5548 50.7125 13.0017 50.1401 13.5699C49.5504 14.1671 49.0899 14.8792 48.7871 15.662C48.4843 16.4447 48.3458 17.2814 48.3801 18.1199C48.3801 19.9999 48.9701 21.5199 50.1401 22.6799C50.7125 23.2481 51.3937 23.6951 52.1428 23.994C52.8919 24.293 53.6937 24.4378 54.5001 24.4199C56.3901 24.4199 58.0001 23.6499 59.3401 22.1199L60.7401 23.5399C60.0025 24.4168 59.0806 25.1202 58.0401 25.5999C56.9501 26.0999 55.7701 26.3499 54.5001 26.3499V26.3499ZM64.5701 10.2499V15.2199L64.4801 16.7199H64.5701C64.8701 16.1999 65.3201 15.7699 65.9501 15.4199C66.565 15.0574 67.2662 14.8674 67.9801 14.8699C69.3101 14.8699 70.3301 15.2699 71.0401 16.0999C71.7801 17.0354 72.1534 18.2088 72.09 19.3999V25.9999H70.0701V19.6999C70.0701 17.7099 69.1801 16.7199 67.4101 16.7199C66.5701 16.7199 65.8901 17.0499 65.3601 17.7199C64.8301 18.3899 64.5601 19.1599 64.5601 20.0399V25.9999H62.5401V10.2499H64.5701ZM76.4901 25.9999H74.4701V15.2199H76.4001V16.9799H76.5001C76.7001 16.3899 77.1201 15.9099 77.7501 15.5299C78.2472 15.2107 78.8139 15.0159 79.4022 14.962C79.9905 14.908 80.5831 14.9965 81.1301 15.2199L80.3601 17.1199C80.1001 17.0099 79.7401 16.9599 79.2901 16.9599C78.5501 16.9599 77.9001 17.2599 77.3301 17.8399C77.0462 18.1414 76.8256 18.4967 76.6813 18.8849C76.5371 19.2731 76.472 19.6862 76.4901 20.0999V25.9999V25.9999ZM82.7401 16.5199C83.2486 15.9785 83.8665 15.5514 84.5526 15.2669C85.2388 14.9825 85.9776 14.8471 86.7201 14.8699C88.3401 14.8699 89.6601 15.4199 90.7001 16.5199C91.2199 17.0634 91.6265 17.705 91.896 18.4072C92.1656 19.1093 92.2927 19.8581 92.2701 20.6099C92.2701 22.2499 91.7501 23.6199 90.7001 24.7199C90.1881 25.2556 89.5692 25.6775 88.8835 25.9583C88.1978 26.2392 87.4607 26.3726 86.7201 26.3499C85.9794 26.3727 85.2423 26.2393 84.5566 25.9585C83.8709 25.6777 83.2519 25.2557 82.7401 24.7199C81.6962 23.6106 81.1351 22.1325 81.1801 20.6099C81.1801 18.9699 81.7001 17.6099 82.7401 16.5099V16.5199ZM84.2401 23.4499C84.5579 23.7874 84.9415 24.0563 85.3671 24.2401C85.7927 24.4239 86.2514 24.5187 86.715 24.5187C87.1787 24.5187 87.6374 24.4239 88.063 24.2401C88.4886 24.0563 88.8722 23.7874 89.1901 23.4499C89.5465 23.0711 89.8231 22.6245 90.0035 22.1366C90.1839 21.6487 90.2643 21.1295 90.2401 20.6099C90.2662 20.0931 90.1866 19.5765 90.0061 19.0916C89.8255 18.6066 89.5478 18.1637 89.1901 17.7899C88.8745 17.4485 88.4917 17.176 88.0658 16.9897C87.6399 16.8033 87.18 16.7071 86.715 16.7071C86.2501 16.7071 85.7902 16.8033 85.3643 16.9897C84.9384 17.176 84.5556 17.4485 84.2401 17.7899C83.8865 18.1662 83.6122 18.6098 83.4335 19.0942C83.2548 19.5787 83.1754 20.0941 83.2001 20.6099C83.2001 21.7799 83.5501 22.7299 84.2401 23.4499ZM93.8901 25.9999V15.2199H95.8301V16.7199H95.9101C96.2201 16.1999 96.6901 15.7699 97.3201 15.4199C97.9007 15.0713 98.5629 14.8816 99.2401 14.8699C100.91 14.8699 102.04 15.5599 102.64 16.9399C103.024 16.2875 103.577 15.7508 104.24 15.3865C104.904 15.0221 105.654 14.8437 106.41 14.8699C107.68 14.8699 108.64 15.2699 109.29 16.0999C109.94 16.8999 110.26 17.9999 110.26 19.3999V25.9999H108.23V19.6999C108.23 18.6199 108.03 17.8499 107.64 17.3999C107.24 16.9399 106.64 16.7199 105.84 16.7199C105.04 16.7199 104.38 17.0499 103.86 17.7199C103.349 18.3844 103.078 19.2019 103.09 20.0399V25.9999H101.06V19.6999C101.06 18.6199 100.86 17.8499 100.46 17.3999C100.07 16.9399 99.4701 16.7199 98.6601 16.7199C97.8701 16.7199 97.2101 17.0499 96.6801 17.7199C96.1694 18.3844 95.8981 19.2019 95.9101 20.0399V25.9999H93.8901ZM117.51 26.3499C116.769 26.3759 116.031 26.244 115.345 25.963C114.659 25.6819 114.04 25.2582 113.53 24.7199C112.505 23.6014 111.96 22.126 112.01 20.6099C112.01 19.0399 112.5 17.6899 113.48 16.5599C114.48 15.4299 115.75 14.8599 117.28 14.8599C118.88 14.8599 120.16 15.3899 121.12 16.4299C122.127 17.5825 122.647 19.0813 122.57 20.6099L122.55 20.9799H114.03C114.036 21.9486 114.424 22.8758 115.11 23.5599C115.78 24.1899 116.57 24.4999 117.47 24.4999C118.92 24.4999 119.9 23.8899 120.41 22.6599L122.21 23.3999C121.846 24.2564 121.246 24.9917 120.48 25.5199C119.68 26.0699 118.68 26.3499 117.51 26.3499ZM120.41 19.3099C120.343 18.6414 120.042 18.0181 119.56 17.5499C119.04 16.9899 118.27 16.7199 117.25 16.7199C116.5 16.7199 115.85 16.9499 115.29 17.4199C114.74 17.8899 114.37 18.5199 114.16 19.3199H120.41V19.3099V19.3099ZM129.61 25.9999V10.2499H134.42C136.84 10.2499 138.78 10.9799 140.23 12.4499C140.96 13.1972 141.529 14.0854 141.904 15.0603C142.279 16.0352 142.451 17.0763 142.41 18.1199C142.41 20.4599 141.68 22.3599 140.23 23.8199C138.78 25.2699 136.84 25.9999 134.43 25.9999H129.6H129.61V25.9999ZM131.63 24.0599H134.43C136.24 24.0599 137.68 23.5399 138.73 22.4999C139.81 21.4599 140.34 19.9999 140.34 18.1199C140.34 16.2599 139.81 14.8099 138.74 13.7699C138.166 13.2256 137.486 12.8038 136.744 12.5305C136.001 12.2571 135.21 12.1379 134.42 12.1799H131.62V24.0599H131.63V24.0599ZM149.03 26.3599C148.287 26.3853 147.546 26.2521 146.859 25.9694C146.171 25.6866 145.551 25.2607 145.04 24.7199C144.019 23.5998 143.477 22.1246 143.53 20.6099C143.53 19.0399 144.02 17.6899 145 16.5599C146 15.4299 147.27 14.8599 148.8 14.8599C150.4 14.8599 151.68 15.3899 152.63 16.4299C153.641 17.5809 154.164 19.0799 154.09 20.6099L154.06 20.9799H145.55C145.556 21.9486 145.944 22.8758 146.63 23.5599C147.3 24.1899 148.09 24.4999 148.98 24.4999C150.43 24.4999 151.42 23.8899 151.93 22.6599L153.73 23.3999C153.366 24.2564 152.766 24.9917 152 25.5199C151.19 26.0699 150.2 26.3499 149.03 26.3499V26.3599V26.3599ZM151.93 19.3099C151.86 18.6401 151.556 18.0165 151.07 17.5499C150.56 16.9899 149.79 16.7199 148.77 16.7199C148.01 16.7199 147.37 16.9499 146.8 17.4199C146.26 17.8899 145.89 18.5199 145.68 19.3199H151.93V19.3099V19.3099ZM158.93 25.9999L154.58 15.2199H156.78L159.95 23.5799H159.99L163.2 15.2199H165.36L160.96 25.9999H158.93V25.9999ZM171.24 26.3499C170.499 26.3752 169.761 26.243 169.075 25.9621C168.389 25.6811 167.77 25.2577 167.26 24.7199C166.235 23.6014 165.69 22.126 165.74 20.6099C165.74 19.0399 166.24 17.6899 167.21 16.5599C168.21 15.4299 169.48 14.8599 171.02 14.8599C172.62 14.8599 173.9 15.3899 174.85 16.4299C175.857 17.5825 176.377 19.0813 176.3 20.6099L176.28 20.9799H167.76C167.766 21.9486 168.154 22.8758 168.84 23.5599C169.52 24.1899 170.3 24.4999 171.2 24.4999C172.65 24.4999 173.63 23.8899 174.15 22.6599L175.95 23.3999C175.584 24.2579 174.98 24.9934 174.21 25.5199C173.41 26.0699 172.41 26.3499 171.24 26.3499V26.3499ZM174.14 19.3099C174.073 18.6414 173.772 18.0181 173.29 17.5499C172.77 16.9899 172 16.7199 170.98 16.7199C170.23 16.7199 169.58 16.9499 169.02 17.4199C168.48 17.8899 168.1 18.5199 167.9 19.3199H174.15L174.14 19.3099V19.3099ZM180.18 25.9999H178.15V10.2499H180.18V25.9999V25.9999ZM183.48 16.5199C183.989 15.9785 184.606 15.5513 185.293 15.2668C185.979 14.9824 186.718 14.8471 187.46 14.8699C189.08 14.8699 190.4 15.4199 191.44 16.5199C191.96 17.0637 192.366 17.7052 192.635 18.4074C192.905 19.1095 193.032 19.8582 193.01 20.6099C193.01 22.2499 192.49 23.6199 191.45 24.7199C190.937 25.2567 190.316 25.6794 189.629 25.9602C188.941 26.2411 188.202 26.3739 187.46 26.3499C186.719 26.373 185.982 26.2398 185.296 25.959C184.611 25.6781 183.992 25.2559 183.48 24.7199C182.436 23.6106 181.875 22.1325 181.92 20.6099C181.92 18.9699 182.44 17.6099 183.48 16.5099V16.5199V16.5199ZM184.98 23.4499C185.3 23.7848 185.685 24.0507 186.112 24.2313C186.538 24.4118 186.997 24.5033 187.46 24.4999C188.42 24.4999 189.24 24.1499 189.93 23.4499C190.287 23.0711 190.563 22.6245 190.744 22.1366C190.924 21.6487 191.004 21.1295 190.98 20.6099C191.006 20.0931 190.927 19.5764 190.746 19.0914C190.566 18.6065 190.288 18.1636 189.93 17.7899C189.454 17.2758 188.83 16.9226 188.145 16.7792C187.459 16.6359 186.746 16.7095 186.104 16.9899C185.678 17.1763 185.296 17.4487 184.98 17.7899C184.626 18.1662 184.352 18.6098 184.174 19.0942C183.995 19.5787 183.915 20.0941 183.94 20.6099C183.94 21.7799 184.29 22.7299 184.98 23.4499ZM200.35 26.3499C199.53 26.3499 198.79 26.1799 198.13 25.8199C197.535 25.5172 197.031 25.0617 196.67 24.4999H196.59L196.67 25.9999V30.7499H194.65V15.2199H196.59V16.7199H196.67C197 16.1899 197.48 15.7499 198.13 15.3999C198.79 15.0399 199.53 14.8699 200.35 14.8699C201.75 14.8699 202.95 15.4199 203.95 16.5199C204.968 17.6345 205.513 19.101 205.47 20.6099C205.47 22.2399 204.97 23.6099 203.96 24.7099C203.512 25.2275 202.958 25.6421 202.335 25.9252C201.711 26.2082 201.034 26.3531 200.35 26.3499V26.3499ZM200.02 24.4999C200.96 24.4999 201.76 24.1499 202.44 23.4499C203.136 22.6723 203.499 21.6524 203.45 20.6099C203.476 20.0965 203.4 19.5831 203.226 19.0992C203.053 18.6152 202.786 18.1703 202.44 17.7899C202.136 17.4496 201.763 17.1781 201.346 16.9936C200.928 16.8091 200.476 16.7158 200.02 16.7199C199.06 16.7199 198.25 17.0699 197.58 17.7699C196.92 18.4699 196.58 19.4199 196.58 20.6099C196.58 21.7999 196.92 22.7399 197.58 23.4499C198.25 24.1499 199.06 24.4999 200.02 24.4999ZM212.22 26.3499C211.477 26.3773 210.737 26.2461 210.049 25.965C209.361 25.684 208.741 25.2595 208.23 24.7199C207.205 23.6014 206.66 22.126 206.71 20.6099C206.71 19.0399 207.21 17.6899 208.19 16.5599C209.19 15.4299 210.45 14.8599 211.99 14.8599C213.59 14.8599 214.87 15.3899 215.82 16.4299C216.827 17.5825 217.347 19.0813 217.27 20.6099L217.25 20.9799H208.74C208.744 21.9471 209.128 22.8739 209.81 23.5599C210.49 24.1899 211.27 24.4999 212.17 24.4999C213.62 24.4999 214.6 23.8899 215.12 22.6599L216.92 23.3999C216.554 24.2579 215.95 24.9934 215.18 25.5199C214.38 26.0699 213.38 26.3499 212.21 26.3499H212.22V26.3499ZM215.12 19.3099C215.05 18.6401 214.746 18.0165 214.26 17.5499C213.74 16.9899 212.97 16.7199 211.95 16.7199C211.2 16.7199 210.55 16.9499 209.99 17.4199C209.45 17.8899 209.07 18.5199 208.87 19.3199H215.12V19.3099V19.3099ZM221.15 25.9999H219.12V15.2199H221.06V16.9799H221.15C221.35 16.3899 221.77 15.9099 222.4 15.5299C222.898 15.2083 223.467 15.0121 224.057 14.9581C224.647 14.9041 225.242 14.9939 225.79 15.2199L225.02 17.1199C224.75 17.0099 224.39 16.9599 223.94 16.9599C223.21 16.9599 222.56 17.2599 221.98 17.8399C221.698 18.142 221.479 18.4976 221.336 18.8858C221.193 19.274 221.13 19.6868 221.15 20.0999V25.9999V25.9999ZM230.69 26.3499C229.49 26.3499 228.49 26.0499 227.69 25.4699C226.936 24.9025 226.349 24.1426 225.99 23.2699L227.79 22.5199C228.36 23.8699 229.33 24.5499 230.71 24.5499C231.34 24.5499 231.85 24.4099 232.25 24.1299C232.66 23.8499 232.87 23.4799 232.87 23.0299C232.87 22.3299 232.37 21.8499 231.39 21.5999L229.22 21.0699C228.504 20.8812 227.837 20.5439 227.26 20.0799C226.959 19.8426 226.718 19.538 226.557 19.1906C226.395 18.8433 226.318 18.4628 226.33 18.0799C226.33 17.1299 226.75 16.3599 227.59 15.7699C228.44 15.1699 229.44 14.8699 230.6 14.8699C231.55 14.8699 232.4 15.0899 233.15 15.5299C233.883 15.9409 234.449 16.5954 234.75 17.3799L233 18.0999C232.6 17.1499 231.78 16.6699 230.53 16.6699C229.93 16.6699 229.43 16.7999 229.02 17.0499C228.61 17.2999 228.4 17.6299 228.4 18.0499C228.4 18.6699 228.88 19.0899 229.83 19.3099L231.96 19.8099C232.98 20.0499 233.72 20.4599 234.21 21.0299C234.479 21.3406 234.682 21.7032 234.805 22.0954C234.928 22.4876 234.97 22.9009 234.927 23.3098C234.884 23.7186 234.757 24.1142 234.554 24.4721C234.352 24.8299 234.078 25.1423 233.75 25.3899C232.95 26.0299 231.94 26.3499 230.69 26.3499Z"></path>
+            <mask height="32" id="mask0_636_18464" maskUnits="userSpaceOnUse" style="mask-type:alpha" width="33" x="2" y="2">
+              <path d="M18.5 34C27.337 34 34.5 26.837 34.5 18C34.5 9.163 27.337 2 18.5 2C9.663 2 2.5 9.163 2.5 18C2.5 26.837 9.663 34 18.5 34Z" fill="#C4C4C4"></path>
+            </mask>
+            <g mask="url(#mask0_636_18464)">
+              <path d="M2.5 2V21.636H12.202L18.5 10.727H34.5V2H2.5Z" fill="#DB4437"></path>
+              <path d="M2.5 34.0001H17.73L24.8 26.9301V21.6361H12.202L2.5 4.99609V34.0001Z" fill="#0F9D58"></path>
+              <path d="M2.5 34.0001H17.73L24.8 26.9301V21.6361H12.202L2.5 4.99609V34.0001Z" fill="url(#paint0_linear_636_18464)"></path>
+              <path d="M18.5 10.7266L24.8 21.6366L17.73 33.9996H34.5V10.7266H18.5Z" fill="#FFCD40"></path>
+              <path d="M18.5 10.7266L24.8 21.6366L17.73 33.9996H34.5V10.7266H18.5Z" fill="url(#paint1_linear_636_18464)"></path>
+              <path d="M12.3741 21.5733L5.1331 9.15332L5.0271 9.33532L12.2171 21.6623L12.3741 21.5723V21.5733Z" fill="#3E2723" fill-opacity="0.15"></path>
+              <path d="M24.653 21.878L24.502 21.791L17.522 34H17.731L24.658 21.884L24.653 21.878Z" fill="#263238" fill-opacity="0.15"></path>
+              <path d="M5.04004 9.35352L15.449 19.7615L12.202 21.6355L5.04004 9.35352Z" fill="url(#paint2_radial_636_18464)"></path>
+              <path d="M17.7419 33.9797L21.5519 19.7617L24.7999 21.6357L17.7419 33.9797Z" fill="url(#paint3_radial_636_18464)"></path>
+              <path d="M18.5 10.7266V14.5366L32.755 10.7266H18.5Z" fill="url(#paint4_radial_636_18464)"></path>
+              <path d="M18.5001 25.2726C20.429 25.2726 22.2789 24.5063 23.6428 23.1424C25.0068 21.7784 25.7731 19.9285 25.7731 17.9996C25.7731 16.0706 25.0068 14.2207 23.6428 12.8568C22.2789 11.4928 20.429 10.7266 18.5001 10.7266C16.5711 10.7266 14.7212 11.4928 13.3573 12.8568C11.9933 14.2207 11.2271 16.0706 11.2271 17.9996C11.2271 19.9285 11.9933 21.7784 13.3573 23.1424C14.7212 24.5063 16.5711 25.2726 18.5001 25.2726V25.2726Z" fill="#F1F1F1"></path>
+              <path d="M18.4999 23.8176C20.0429 23.8176 21.5227 23.2047 22.6138 22.1136C23.7049 21.0225 24.3179 19.5427 24.3179 17.9996C24.3179 16.4566 23.7049 14.9768 22.6138 13.8857C21.5227 12.7946 20.0429 12.1816 18.4999 12.1816C16.9569 12.1816 15.477 12.7946 14.3859 13.8857C13.2949 14.9768 12.6819 16.4566 12.6819 17.9996C12.6819 19.5427 13.2949 21.0225 14.3859 22.1136C15.477 23.2047 16.9569 23.8176 18.4999 23.8176V23.8176Z" fill="#4285F4"></path>
+              <path d="M18.5001 10.5459C16.5713 10.5459 14.7215 11.312 13.3576 12.6758C11.9937 14.0395 11.2273 15.8892 11.2271 17.8179V17.9999C11.2271 16.071 11.9933 14.2211 13.3573 12.8571C14.7212 11.4932 16.5711 10.7269 18.5001 10.7269H34.5V10.5459H18.5001V10.5459Z" fill="#3E2723" fill-opacity="0.2"></path>
+              <path d="M24.79 21.6361C24.153 22.741 23.2364 23.6588 22.1322 24.2973C21.0281 24.9357 19.7754 25.2722 18.5 25.2731C17.2241 25.2728 15.9707 24.9365 14.866 24.298C13.7614 23.6596 12.8443 22.7415 12.207 21.6361H12.2L2.5 4.99609V5.17809L12.202 21.8181H12.209C12.8464 22.9233 13.7635 23.8412 14.8682 24.4795C15.9729 25.1177 17.2262 25.4539 18.502 25.4541C19.7774 25.4537 21.0302 25.1175 22.1344 24.4792C23.2386 23.841 24.1552 22.9231 24.792 21.8181H24.802V21.6361H24.791H24.79Z" fill="white" fill-opacity="0.1"></path>
+              <path d="M18.6821 10.7266C18.6511 10.7266 18.6221 10.7306 18.5911 10.7326C20.5034 10.7557 22.3296 11.5315 23.6739 12.8917C25.0182 14.2519 25.7724 16.0871 25.7731 17.9996C25.7724 19.912 25.0182 21.7472 23.6739 23.1074C22.3296 24.4677 20.5034 25.2434 18.5911 25.2666C18.6211 25.2666 18.6511 25.2726 18.6811 25.2726C20.61 25.2726 22.4599 24.5063 23.8239 23.1424C25.1878 21.7784 25.9541 19.9285 25.9541 17.9996C25.9541 16.0706 25.1878 14.2207 23.8239 12.8568C22.4599 11.4928 20.61 10.7266 18.6811 10.7266H18.6821Z" fill="#3E2723" opacity="0.1"></path>
+              <path d="M24.864 21.8778C25.3698 21.0043 25.6876 20.0348 25.7971 19.0314C25.9066 18.028 25.8054 17.0128 25.5 16.0508C25.673 16.6728 25.773 17.3258 25.773 18.0008C25.773 19.3258 25.415 20.5608 24.796 21.6308L24.8 21.6378L17.73 34.0018H17.942L24.867 21.8848L24.864 21.8778V21.8778Z" fill="white" fill-opacity="0.2"></path>
+              <path d="M18.5 2.182C27.305 2.182 34.45 9.296 34.498 18.091L34.5 18C34.5 9.164 27.336 2 18.5 2C9.664 2 2.5 9.164 2.5 18L2.502 18.09C2.55 9.297 9.694 2.183 18.5 2.183V2.182Z" fill="white" fill-opacity="0.2"></path>
+              <path d="M18.5 33.8182C27.305 33.8182 34.45 26.7042 34.498 17.9092L34.5 18.0002C34.5 26.8362 27.336 34.0002 18.5 34.0002C9.664 34.0002 2.5 26.8362 2.5 18.0002L2.502 17.9102C2.55 26.7032 9.694 33.8172 18.5 33.8172V33.8182Z" fill="#3E2723" fill-opacity="0.15"></path>
+              <path d="M18.5 34C27.337 34 34.5 26.837 34.5 18C34.5 9.163 27.337 2 18.5 2C9.663 2 2.5 9.163 2.5 18C2.5 26.837 9.663 34 18.5 34Z" fill="url(#paint5_radial_636_18464)"></path>
+            </g>
+            <defs>
+              <linearGradient gradientUnits="userSpaceOnUse" id="paint0_linear_636_18464" x1="21.204" x2="10.598" y1="30.4541" y2="24.2421">
+                <stop stop-color="#055524" stop-opacity="0.4"></stop>
+                <stop offset="0.33" stop-color="#055524" stop-opacity="0"></stop>
+              </linearGradient>
+              <linearGradient gradientUnits="userSpaceOnUse" id="paint1_linear_636_18464" x1="23.201" x2="25.872" y1="9.60056" y2="21.2956">
+                <stop stop-color="#EA6100" stop-opacity="0.3"></stop>
+                <stop offset="0.66" stop-color="#EA6100" stop-opacity="0"></stop>
+              </linearGradient>
+              <radialGradient gradientTransform="translate(5.02304 9.36652) scale(14.1898)" cx="0" cy="0" gradientUnits="userSpaceOnUse" id="paint2_radial_636_18464" r="1">
+                <stop stop-color="#3E2723" stop-opacity="0.2"></stop>
+                <stop offset="1" stop-color="#3E2723" stop-opacity="0"></stop>
+              </radialGradient>
+              <radialGradient gradientTransform="translate(18.4719 18.0247) scale(15.9764 15.9764)" cx="0" cy="0" gradientUnits="userSpaceOnUse" id="paint3_radial_636_18464" r="1">
+                <stop stop-color="#263238" stop-opacity="0.2"></stop>
+                <stop offset="1" stop-color="#263238" stop-opacity="0"></stop>
+              </radialGradient>
+              <radialGradient gradientTransform="translate(17.805 10.7176) scale(15.2869 15.2869)" cx="0" cy="0" gradientUnits="userSpaceOnUse" id="paint4_radial_636_18464" r="1">
+                <stop stop-color="#3E2723" stop-opacity="0.2"></stop>
+                <stop offset="1" stop-color="#3E2723" stop-opacity="0"></stop>
+              </radialGradient>
+              <radialGradient gradientTransform="translate(7.28 6.366) scale(32.1356)" cx="0" cy="0" gradientUnits="userSpaceOnUse" id="paint5_radial_636_18464" r="1">
+                <stop stop-color="white" stop-opacity="0.1"></stop>
+                <stop offset="1" stop-color="white" stop-opacity="0"></stop>
+              </radialGradient>
+            </defs>
+          </svg>
+        </div>
+        <h1 class="headline__title"></h1>
+        <p class="color-mid-text"></p>
+        <div><a class="button gap-top-size-1" data-type="primary"></a></div>
+      </div>
+    </section>
+    <web-subscribe>
+      <div class="wrapper">
+        <div class="headline all-center flow">
+          <h2 class="headline__title">Developer Newsletter</h2>
+          <p class="subscribe__message">Get the latest news, techniques and updates straight to your inbox.</p>
+        </div>
+        <form class="flow gap-top-size-2" action="https://services.google.com/fb/submissions/591768a1-61a6-4f16-8e3c-adf1661539da/" method="post">
+          <div class="switcher">
+            <div>
+              <label class="visually-hidden" for="sub-firstname">Nombre</label>
+              <input id="sub-firstname" name="FirstName" placeholder="Nombre" required="">
+            </div>
+            <div>
+              <label class="visually-hidden" for="sub-lastname">Apellido</label>
+              <input id="sub-lastname" name="LastName" placeholder="Apellido" required="">
+            </div>
+          </div>
+          <div>
+            <label class="visually-hidden" for="sub-email">Tu email</label>
+            <input placeholder="Tu email" id="sub-email" name="EmailAddress" required="" type="email">
+          </div>
+          <div>
+            <label class="visually-hidden" for="sub-country">País</label>
+            <select id="sub-country" name="Country" required="">
+              <option value="AF: Afghanistan">Afghanistan (افغانستان)</option>
+              <option value="AX: Åland Islands">Åland Islands (Åland)</option>
+              <option value="AL: Albania">Albania (Shqipëria)</option>
+              <option value="DZ: Algeria">Algeria (الجزائر)</option>
+              <option value="AS: American Samoa">American Samoa</option>
+              <option value="AD: Andorra">Andorra</option>
+              <option value="AO: Angola">Angola</option>
+              <option value="AI: Anguilla">Anguilla</option>
+              <option value="AQ: Antarctica">Antarctica</option>
+              <option value="AG: Antigua and Barbuda">Antigua and Barbuda</option>
+              <option value="AR: Argentina">Argentina</option>
+              <option value="AM: Armenia">Armenia (Հայաստանի Հանրապետութիւն)</option>
+              <option value="AW: Aruba">Aruba</option>
+              <option value="AC: Ascension Island">Ascension Island</option>
+              <option value="AU: Australia">Australia</option>
+              <option value="AT: Austria">Austria (Österreich)</option>
+              <option value="AZ: Azerbaijan">Azerbaijan (Azərbaycan)</option>
+              <option value="BS: Bahamas">Bahamas</option>
+              <option value="BH: Bahrain">Bahrain (البحرين)</option>
+              <option value="BD: Bangladesh">Bangladesh (বাংলাদেশ)</option>
+              <option value="BB: Barbados">Barbados</option>
+              <option value="BY: Belarus">Belarus (Беларусь)</option>
+              <option value="BE: Belgium">Belgium (België)</option>
+              <option value="BZ: Belize">Belize</option>
+              <option value="BJ: Benin">Benin (Bénin)</option>
+              <option value="BM: Bermuda">Bermuda</option>
+              <option value="BT: Bhutan">Bhutan (भूटान)</option>
+              <option value="BO: Bolivia">Bolivia</option>
+              <option value="BA: Bosnia and Herzegovina">Bosnia and Herzegovina (Bosna i Hercegovina)</option>
+              <option value="BW: Botswana">Botswana</option>
+              <option value="BV: Bouvet Island">Bouvet Island</option>
+              <option value="BR: Brazil">Brazil (Brasil)</option>
+              <option value="IO: British Indian Ocean Territory">British Indian Ocean Territory</option>
+              <option value="VG: British Virgin Islands">British Virgin Islands</option>
+              <option value="BN: Brunei">Brunei</option>
+              <option value="BG: Bulgaria">Bulgaria (България)</option>
+              <option value="BF: Burkina Faso">Burkina Faso</option>
+              <option value="BI: Burundi">Burundi</option>
+              <option value="KH: Cambodia">Cambodia (កម្ពុជា)</option>
+              <option value="CM: Cameroon">Cameroon (Cameroun)</option>
+              <option value="CA: Canada">Canada</option>
+              <option value="IC: Canary Islands">Canary Islands</option>
+              <option value="CV: Cape Verde">Cape Verde (Cabo Verde)</option>
+              <option value="BQ: Caribbean Netherlands">Caribbean Netherlands</option>
+              <option value="KY: Cayman Islands">Cayman Islands</option>
+              <option value="CF: Central African Republic">Central African Republic (République centrafricaine)</option>
+              <option value="EA: Ceuta and Melilla">Ceuta and Melilla</option>
+              <option value="TD: Chad">Chad (تشاد)</option>
+              <option value="CL: Chile">Chile</option>
+              <option value="CN: China">China (中国)</option>
+              <option value="CX: Christmas Island">Christmas Island</option>
+              <option value="CP: Clipperton Island">Clipperton Island</option>
+              <option value="CC: Cocos (Keeling) Islands">Cocos (Keeling) Islands</option>
+              <option value="CO: Colombia">Colombia</option>
+              <option value="KM: Comoros">Comoros (جزر القمر)</option>
+              <option value="CD: Congo">Congo (DRC) (République démocratique du Congo)</option>
+              <option value="CG: Congo">Congo</option>
+              <option value="CK: Cook Islands">Cook Islands</option>
+              <option value="CR: Costa Rica">Costa Rica</option>
+              <option value="HR: Croatia">Croatia (Hrvatska)</option>
+              <option value="CU: Cuba">Cuba</option>
+              <option value="CW: Curaçao">Curaçao</option>
+              <option value="CY: Cyprus">Cyprus (Κύπρος)</option>
+              <option value="CZ: Czechia">Czechia (Česko)</option>
+              <option value="CI: Côte d’Ivoire">Côte d’Ivoire</option>
+              <option value="DK: Denmark">Denmark (Danmark)</option>
+              <option value="DG: Diego Garcia">Diego Garcia</option>
+              <option value="DJ: Djibouti">Djibouti (Jabuuti)</option>
+              <option value="DM: Dominica">Dominica</option>
+              <option value="DO: Dominican Republic">Dominican Republic (República Dominicana)</option>
+              <option value="EC: Ecuador">Ecuador</option>
+              <option value="EG: Egypt">Egypt (مصر)</option>
+              <option value="SV: El Salvador">El Salvador</option>
+              <option value="GQ: Equatorial Guinea">Equatorial Guinea (Guinée équatoriale)</option>
+              <option value="ER: Eritrea">Eritrea (ኤርትራ, اريتريا)</option>
+              <option value="EE: Estonia">Estonia (Eesti)</option>
+              <option value="ET: Ethiopia">Ethiopia (ኢትዮጵያ)</option>
+              <option value="FK: Falkland Islands">Falkland Islands</option>
+              <option value="FO: Faroe Islands">Faroe Islands (Føroyar)</option>
+              <option value="FJ: Fiji">Fiji (फिजी)</option>
+              <option value="FI: Finland">Finland (Suomi)</option>
+              <option value="FR: France">France</option>
+              <option value="GF: French Guiana">French Guiana (Guyane française)</option>
+              <option value="PF: French Polynesia">French Polynesia (Polynésie française)</option>
+              <option value="TF: French Southern Territories">French Southern Territories</option>
+              <option value="GA: Gabon">Gabon</option>
+              <option value="GM: Gambia">Gambia</option>
+              <option value="GE: Georgia">Georgia (საქართველო)</option>
+              <option value="DE: Germany">Germany (Deutschland)</option>
+              <option value="GH: Ghana">Ghana</option>
+              <option value="GI: Gibraltar">Gibraltar</option>
+              <option value="GR: Greece">Greece (Ελλάδα)</option>
+              <option value="GL: Greenland">Greenland (Kalaallit Nunaat)</option>
+              <option value="GD: Grenada">Grenada</option>
+              <option value="GP: Guadeloupe">Guadeloupe</option>
+              <option value="GU: Guam">Guam</option>
+              <option value="GT: Guatemala">Guatemala</option>
+              <option value="GG: Guernsey">Guernsey</option>
+              <option value="GN: Guinea">Guinea (Guinée)</option>
+              <option value="GW: Guinea-Bissau">Guinea-Bissau (Guiné Bissau)</option>
+              <option value="GY: Guyana">Guyana</option>
+              <option value="HT: Haiti">Haiti (Haïti)</option>
+              <option value="HM: Heard &amp; McDonald Islands">Heard &amp; McDonald Islands</option>
+              <option value="HN: Honduras">Honduras</option>
+              <option value="HK: Hong Kong">Hong Kong (香港)</option>
+              <option value="HU: Hungary">Hungary (Magyarország)</option>
+              <option value="IS: Iceland">Iceland (Ísland)</option>
+              <option value="IN: India">India (भारत)</option>
+              <option value="ID: Indonesia">Indonesia</option>
+              <option value="IR: Iran">Iran (ایران)</option>
+              <option value="IQ: Iraq">Iraq (العراق)</option>
+              <option value="IE: Ireland">Ireland</option>
+              <option value="IM: Isle of Man">Isle of Man</option>
+              <option value="IL: Israel">Israel (ישראל)</option>
+              <option value="IT: Italy">Italy (Italia)</option>
+              <option value="JM: Jamaica">Jamaica</option>
+              <option value="JP: Japan">Japan (日本)</option>
+              <option value="JE: Jersey">Jersey</option>
+              <option value="JO: Jordan">Jordan (الأردن)</option>
+              <option value="KZ: Kazakhstan">Kazakhstan (Казахстан)</option>
+              <option value="KE: Kenya">Kenya</option>
+              <option value="KI: Kiribati">Kiribati</option>
+              <option value="XK: Kosovo">Kosovo</option>
+              <option value="KW: Kuwait">Kuwait (الكويت)</option>
+              <option value="KG: Kyrgyzstan">Kyrgyzstan (Кыргызстан)</option>
+              <option value="LA: Laos">Laos (ลาว)</option>
+              <option value="LV: Latvia">Latvia (Latvija)</option>
+              <option value="LB: Lebanon">Lebanon (لبنان)</option>
+              <option value="LS: Lesotho">Lesotho</option>
+              <option value="LR: Liberia">Liberia</option>
+              <option value="LY: Libya">Libya (ليبيا)</option>
+              <option value="LI: Liechtenstein">Liechtenstein</option>
+              <option value="LT: Lithuania">Lithuania (Lietuva)</option>
+              <option value="LU: Luxembourg">Luxembourg</option>
+              <option value="MO: Macau">Macau (澳门)</option>
+              <option value="MK: Macedonia">Macedonia (FYROM) (Македонија)</option>
+              <option value="MG: Madagascar">Madagascar</option>
+              <option value="MW: Malawi">Malawi</option>
+              <option value="MY: Malaysia">Malaysia</option>
+              <option value="MV: Maldives">Maldives</option>
+              <option value="ML: Mali">Mali (مالي)</option>
+              <option value="MT: Malta">Malta</option>
+              <option value="MH: Marshall Islands">Marshall Islands</option>
+              <option value="MQ: Martinique">Martinique</option>
+              <option value="MR: Mauritania">Mauritania (موريتانيا)</option>
+              <option value="MU: Mauritius">Mauritius</option>
+              <option value="YT: Mayotte">Mayotte</option>
+              <option value="MX: Mexico">Mexico (México)</option>
+              <option value="FM: Micronesia">Micronesia</option>
+              <option value="MD: Moldova">Moldova</option>
+              <option value="MC: Monaco">Monaco</option>
+              <option value="MN: Mongolia">Mongolia (Монгол улс)</option>
+              <option value="ME: Montenegro">Montenegro (Црна Гора)</option>
+              <option value="MS: Montserrat">Montserrat</option>
+              <option value="MA: Morocco">Morocco (المغرب)</option>
+              <option value="MZ: Mozambique">Mozambique (Moçambique)</option>
+              <option value="MM: Myanmar">Myanmar (Burma)</option>
+              <option value="NA: Namibia">Namibia</option>
+              <option value="NR: Nauru">Nauru</option>
+              <option value="NP: Nepal">Nepal (नेपाल)</option>
+              <option value="NL: Netherlands">Netherlands (Nederland)</option>
+              <option value="AN: Netherlands Antilles">Netherlands Antilles (Nederlandse Antillen)</option>
+              <option value="NC: New Caledonia">New Caledonia (Nouvelle-Calédonie)</option>
+              <option value="NZ: New Zealand">New Zealand</option>
+              <option value="NI: Nicaragua">Nicaragua</option>
+              <option value="NE: Niger">Niger</option>
+              <option value="NG: Nigeria">Nigeria</option>
+              <option value="NU: Niue">Niue</option>
+              <option value="NF: Norfolk Island">Norfolk Island</option>
+              <option value="KP: North Korea">North Korea (조선 민주주의 인민 공화국)</option>
+              <option value="MP: Northern Mariana Islands">Northern Mariana Islands</option>
+              <option value="NO: Norway">Norway (Norge)</option>
+              <option value="OM: Oman">Oman (عمان)</option>
+              <option value="QO: Outlying Oceania">Outlying Oceania</option>
+              <option value="PK: Pakistan">Pakistan (پاکستان)</option>
+              <option value="PW: Palau">Palau</option>
+              <option value="PS: Palestine">Palestine (فلسطين)</option>
+              <option value="PA: Panama">Panama (Panamá)</option>
+              <option value="PG: Papua New Guinea">Papua New Guinea</option>
+              <option value="PY: Paraguay">Paraguay</option>
+              <option value="PE: Peru">Peru (Perú)</option>
+              <option value="PH: Philippines">Philippines</option>
+              <option value="PN: Pitcairn Islands">Pitcairn Islands</option>
+              <option value="PL: Poland">Poland (Polska)</option>
+              <option value="PT: Portugal">Portugal</option>
+              <option value="PR: Puerto Rico">Puerto Rico</option>
+              <option value="QA: Qatar">Qatar (قطر)</option>
+              <option value="RO: Romania">Romania (România)</option>
+              <option value="RU: Russia">Russia (Россия)</option>
+              <option value="RW: Rwanda">Rwanda</option>
+              <option value="RE: Réunion">Réunion</option>
+              <option value="BL: Saint Barthélemy">Saint Barthélemy</option>
+              <option value="SH: Saint Helena">Saint Helena</option>
+              <option value="KN: Saint Kitts and Nevis">Saint Kitts and Nevis</option>
+              <option value="LC: Saint Lucia">Saint Lucia</option>
+              <option value="MF: Saint Martin">Saint Martin</option>
+              <option value="PM: Saint Pierre and Miquelon">Saint Pierre and Miquelon</option>
+              <option value="WS: Samoa">Samoa</option>
+              <option value="SM: San Marino">San Marino</option>
+              <option value="SA: Saudi Arabia">Saudi Arabia (المملكة العربية السعودية)</option>
+              <option value="SN: Senegal">Senegal (Sénégal)</option>
+              <option value="RS: Serbia">Serbia (Србија)</option>
+              <option value="SC: Seychelles">Seychelles</option>
+              <option value="SL: Sierra Leone">Sierra Leone</option>
+              <option value="SG: Singapore">Singapore (新加坡)</option>
+              <option value="SX: Sint Maarten">Sint Maarten</option>
+              <option value="SK: Slovakia">Slovakia (Slovenská republika)</option>
+              <option value="SI: Slovenia">Slovenia (Slovenija)</option>
+              <option value="SB: Solomon Islands">Solomon Islands</option>
+              <option value="SO: Somalia">Somalia (Somali)</option>
+              <option value="ZA: South Africa">South Africa</option>
+              <option value="GS: South Georgia &amp; South Sandwich Islands">South Georgia &amp; South Sandwich Islands</option>
+              <option value="KR: South Korea">South Korea (대한민국)</option>
+              <option value="SS: South Sudan">South Sudan</option>
+              <option value="ES: Spain">Spain (España)</option>
+              <option value="LK: Sri Lanka">Sri Lanka (இலங்கை)</option>
+              <option value="VC: St. Vincent &amp; Grenadines">St. Vincent &amp; Grenadines</option>
+              <option value="SD: Sudan">Sudan (السودان)</option>
+              <option value="SR: Suriname">Suriname</option>
+              <option value="SJ: Svalbard and Jan Mayen">Svalbard and Jan Mayen</option>
+              <option value="SZ: Swaziland">Swaziland</option>
+              <option value="SE: Sweden">Sweden (Sverige)</option>
+              <option value="CH: Switzerland">Switzerland (Schweiz, Suisse, Svizzera)</option>
+              <option value="SY: Syria">Syria (سوريا)</option>
+              <option value="ST: São Tomé and Príncipe">São Tomé and Príncipe</option>
+              <option value="TW: Taiwan">Taiwan (台灣)</option>
+              <option value="TJ: Tajikistan">Tajikistan (تاجیکستان)</option>
+              <option value="TZ: Tanzania">Tanzania</option>
+              <option value="TH: Thailand">Thailand (ประเทศไทย)</option>
+              <option value="TL: Timor-Leste">Timor-Leste</option>
+              <option value="TG: Togo">Togo</option>
+              <option value="TK: Tokelau">Tokelau</option>
+              <option value="TO: Tonga">Tonga</option>
+              <option value="TT: Trinidad and Tobago">Trinidad and Tobago</option>
+              <option value="TA: Tristan da Cunha">Tristan da Cunha</option>
+              <option value="TN: Tunisia">Tunisia (تونس)</option>
+              <option value="TR: Turkey">Turkey (Türkiye)</option>
+              <option value="TM: Turkmenistan">Turkmenistan (Туркменистан)</option>
+              <option value="TC: Turks and Caicos Islands">Turks and Caicos Islands</option>
+              <option value="TV: Tuvalu">Tuvalu</option>
+              <option value="UM: U.S. Outlying Islands">U.S. Outlying Islands (United States Minor Outlying Islands)</option>
+              <option value="VI: U.S. Virgin Islands">U.S. Virgin Islands</option>
+              <option value="UG: Uganda">Uganda</option>
+              <option value="UA: Ukraine">Ukraine (Україна)</option>
+              <option value="AE: United Arab Emirates">United Arab Emirates (الامارات العربية المتحدة)</option>
+              <option value="GB: United Kingdom">United Kingdom</option>
+              <option value="US: United States" selected="">United States</option>
+              <option value="UY: Uruguay">Uruguay</option>
+              <option value="UZ: Uzbekistan">Uzbekistan (Ўзбекистон)</option>
+              <option value="VU: Vanuatu">Vanuatu</option>
+              <option value="VA: Vatican City">Vatican City (Vaticano)</option>
+              <option value="VE: Venezuela">Venezuela</option>
+              <option value="VN: Vietnam">Vietnam (Việt Nam)</option>
+              <option value="WF: Wallis and Futuna">Wallis and Futuna</option>
+              <option value="EH: Western Sahara">Western Sahara (الصحراء الغربية)</option>
+              <option value="YE: Yemen">Yemen (اليمن)</option>
+              <option value="ZM: Zambia">Zambia</option>
+              <option value="ZW: Zimbabwe">Zimbabwe</option>
+            </select>
+          </div>
+          <div class="all-center">
+            <p class="color-mid-text">¡No te preocupes, no hay spam aquí! Su información solo se utilizará para web.dev y actualizaciones relacionadas con Chrome y nuestros correos electrónicos no suelen recibir más de 1 a 2 veces al mes. Puede anular su suscripción en cualquier momento.</p>
+          </div>
+          <div class="cluster gutter-base flex-align-start gap-top-size-2">
+            <input id="sub-newsletter" name="WebDevNewsletter" required="" type="checkbox" value="Unconfirmed">
+            <label for="sub-newsletter">Agrégame a la lista de correo web.dev.</label>
+          </div>
+          <div class="cluster gutter-base flex-align-start">
+            <input id="sub-pii-spii" name="collects-pii-spii-checkbox" required="" type="checkbox" value="Unconfirmed">
+            <label for="sub-pii-spii">Acepto los <a href="https://policies.google.com/terms" rel="noopener" target="_blank"> Términos y condiciones </a> de Google y reconozco que mi información se utilizará de acuerdo con con la <a href="https://policies.google.com/privacy" rel="noopener" target="_blank"> Política de privacidad </a> de Google.</label>
+          </div>
+          <div class="visually-hidden">
+            <label for="sub-language">Idioma</label>
+            <select id="sub-language" name="LanguagePreference" required="" tabindex="-1">
+              <option selected="" value="en-US">en-US</option>
+            </select>
+          </div>
+          <div class="g-recaptcha all-center gap-top-size-1" data-callback="recaptchaSuccess" data-sitekey="6Lfqf9YdAAAAAKUVvj6y53E_tMMlnj8dt1fpo-FV">
+            <div style="width: 304px; height: 78px;">
+              <div>
+                <iframe title="reCAPTCHA" src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6Lfqf9YdAAAAAKUVvj6y53E_tMMlnj8dt1fpo-FV&amp;co=aHR0cHM6Ly93ZWIuZGV2OjQ0Mw..&amp;hl=es&amp;v=RGRQD9tdxHtnt-Bxkx9pM75S&amp;size=normal&amp;cb=gawssa8hn06b" width="304" height="78" role="presentation" name="a-27771xqt3fap" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe>
+              </div>
+              <textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>
+            </div>
+            <iframe style="display: none;"></iframe>
+          </div>
+          <div class="gap-top-size-2">
+            <div class="subscribe__error hidden-yes">
+              <aside class="aside flow bg-state-warn-bg color-state-warn-text">
+                <p class="cluster"><span class="aside__icon box-block color-state-warn-text">
+                  <svg aria-label="Warning sign" viewBox="0 0 24 24" fill="currentColor" height="24" role="img" width="24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M23 21L12 2 1 21h22zm-12-3v-2h2v2h-2zm0-4h2v-4h-2v4z" clip-rule="evenodd" fill-rule="evenodd"></path>
+                  </svg>
+                  </span><strong>Advertencia</strong></p>
+                <div class="flow">
+                  <p class="subscribe__error__message"></p>
+                </div>
+              </aside>
+            </div>
+            <noscript>
+            <aside class="aside flow bg-state-warn-bg color-state-warn-text">
+              <p class=cluster><span class="aside__icon box-block color-state-warn-text">
+                <svg aria-label="Warning sign" viewbox="0 0 24 24" fill=currentColor height=24 role=img width=24 xmlns=http://www.w3.org/2000/svg>
+                  <path d="M23 21L12 2 1 21h22zm-12-3v-2h2v2h-2zm0-4h2v-4h-2v4z" clip-rule=evenodd fill-rule=evenodd />
+                </svg>
+                </span><strong>Advertencia</strong>
+              <div class=flow>Parece que tiene JavaScript deshabilitado o no se pudo cargar. Después de enviar el formulario, presione el botón Atrás para regresar al sitio.</div>
+            </aside>
+            </noscript>
+          </div>
+          <div class="all-center gap-top-size-1">
+            <div>
+              <button class="button" data-type="primary">suscribir</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <!----></web-subscribe>
+  </div>
+</main>
+<footer class="site-footer" role="contentinfo">
+  <nav aria-label="footer navigation" class="site-footer__primary-nav auto-grid">
+    <div>
+      <h3 class="text-size-2 color-mid-text">Contribute</h3>
+      <ul class="w-footer__linkbox-list" role="list">
+        <li><a data-category="Site-Wide Custom Events" data-label="Footer Link (index 1)" href="https://github.com/GoogleChrome/web.dev/issues/new?assignees=&amp;labels=bug&amp;template=bug_report.md&amp;title="> Presentar un error </a></li>
+        <li><a data-category="Site-Wide Custom Events" data-label="Footer Link (index 2)" href="https://github.com/googlechrome/web.dev"> Ver fuente </a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-size-2 color-mid-text">Contenido relevante</h3>
+      <ul class="w-footer__linkbox-list" role="list">
+        <li><a data-category="Site-Wide Custom Events" data-label="Footer Link (index 1)" href="https://developer.chrome.com/"> developer.chrome.com </a></li>
+        <li><a data-category="Site-Wide Custom Events" data-label="Footer Link (index 1)" href="https://blog.chromium.org/"> Chrome Actualizaciones </a></li>
+        <li><a data-category="Site-Wide Custom Events" data-label="Footer Link (index 3)" href="/tags/case-study/"> Case studies </a></li>
+        <li><a data-label="Footer Link (index 5)" data-category="Podcasts" href="/podcasts/"> Podcasts </a></li>
+        <li><a data-label="Footer Link (index 6)" data-category="Shows" href="/shows/"> Shows </a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-size-2 color-mid-text">Conectar</h3>
+      <ul class="w-footer__linkbox-list" role="list">
+        <li><a data-category="Site-Wide Custom Events" data-label="Footer Link (index 1)" href="https://www.twitter.com/ChromiumDev"> Twitter </a></li>
+        <li><a data-category="Site-Wide Custom Events" data-label="Footer Link (index 2)" href="https://www.youtube.com/user/ChromeDevelopers"> YouTube </a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav aria-label="Google developers" class="site-footer__brand-nav repel">
+    <ul class="cluster" role="list">
+      <li><a data-category="Site-Wide Custom Events" data-label="Footer Google Developers Link" href="https://developers.google.com/"> <img alt="Google Developers" class="w-footer__utility-logo" height="33" loading="lazy" src="/images/lockup-color.png" width="185"> </a></li>
+      <li><a data-category="Site-Wide Custom Events" data-label="Footer Chrome Link" href="https://developer.chrome.com/"> Chrome </a></li>
+      <li><a data-category="Site-Wide Custom Events" data-label="Footer Firebase Link" href="https://firebase.google.com/"> Firebase </a></li>
+      <li><a data-category="Site-Wide Custom Events" data-label="Footer Google Cloud Platform Link" href="https://cloud.google.com/"> Google Cloud Platform </a></li>
+      <li><a data-category="Site-Wide Custom Events" data-label="Footer All products Link" href="https://developers.google.com/products"> Todos los productos </a></li>
+    </ul>
+    <div class="cluster">
+      <theme-toggle>
+        <label class="toggle-switch" for="theme-toggle">
+        <span class="toggle-switch__label">Dark theme</span>
+        <input class="toggle-switch__input" id="theme-toggle" role="switch" type="checkbox" aria-checked="true">
+        <div class="toggle-switch__decor focus-ring" aria-hidden="true">
+          <div class="toggle-switch__thumb"></div>
+        </div>
+        </label>
+      </theme-toggle>
+      <web-language-select current="es"><!---->
+        <div class="w-display-flex">
+          <label class="w-visually-hidden" for="preferred-language"> Choose language </label>
+          <select id="preferred-language">
+            <!--?lit$252287762$--><!---->
+            <option value="en"><!--?lit$252287762$-->ENGLISH (<!--?lit$252287762$-->en)</option>
+            <!----><!---->
+            <option value="pl"><!--?lit$252287762$-->POLSKI (<!--?lit$252287762$-->pl)</option>
+            <!----><!---->
+            <option selected="" value="es"> 
+            <!--?lit$252287762$-->ESPAÑOL (<!--?lit$252287762$-->es) </option>
+            <!----><!---->
+            <option value="ko"><!--?lit$252287762$-->한국어 (<!--?lit$252287762$-->ko)</option>
+            <!----><!---->
+            <option value="zh"><!--?lit$252287762$-->中文 (<!--?lit$252287762$-->zh)</option>
+            <!----><!---->
+            <option value="ru"><!--?lit$252287762$-->РУССКИЙ (<!--?lit$252287762$-->ru)</option>
+            <!----><!---->
+            <option value="pt"><!--?lit$252287762$-->PORTUGUÊS (<!--?lit$252287762$-->pt)</option>
+            <!----><!---->
+            <option value="ja"><!--?lit$252287762$-->日本語 (<!--?lit$252287762$-->ja)</option>
+            <!---->
+          </select>
+        </div>
+      </web-language-select>
+    </div>
+  </nav>
+  <nav aria-label="terms and policies" class="site-footer__misc-links">
+    <ul class="cluster" role="list">
+      <li><a data-category="Site-Wide Custom Events" data-label="Footer Terms and Privacy link" href="https://policies.google.com/"> Condiciones y privacidad </a></li>
+      <li><a data-category="Site-Wide Custom Events" data-label="Footer Community Guidelines link" href="/community-guidelines/"> Principios de la Comunidad </a></li>
+    </ul>
+  </nav>
+  <p class="gap-top-size-2 text-size-0">Except as otherwise noted, the content of this page is licensed under the <a href="https://creativecommons.org/licenses/by/4.0/"> Creative Commons Attribution 4.0 License</a>, and code samples are licensed under the <a href="https://www.apache.org/licenses/LICENSE-2.0"> Apache 2.0 License</a>. For details, see the <a href="https://developers.google.com/terms/site-policies"> Google Developers Site Policies</a>.</p>
+</footer>
+<div style="background-color: rgb(255, 255, 255); border: 1px solid rgb(204, 204, 204); box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 3px; position: absolute; transition: visibility 0s linear 0.3s, opacity 0.3s linear 0s; opacity: 0; visibility: hidden; z-index: 2000000000; left: 0px; top: -10000px;">
+  <div style="width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: rgb(255, 255, 255); opacity: 0.05;"></div>
+  <div class="g-recaptcha-bubble-arrow" style="border: 11px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -11px; z-index: 2000000000;"></div>
+  <div class="g-recaptcha-bubble-arrow" style="border: 10px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -10px; z-index: 2000000000;"></div>
+  <div style="z-index: 2000000000; position: relative;">
+    <iframe title="El reCAPTCHA caduca dentro de dos minutos" src="https://www.google.com/recaptcha/api2/bframe?hl=es&amp;v=RGRQD9tdxHtnt-Bxkx9pM75S&amp;k=6Lfqf9YdAAAAAKUVvj6y53E_tMMlnj8dt1fpo-FV" name="c-27771xqt3fap" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox" style="width: 100%; height: 100%;"></iframe>
+  </div>
+</div>
+</body>
+</html>
