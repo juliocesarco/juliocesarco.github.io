@@ -8,8 +8,6 @@
   <link href="https://juliocesar.com.co/css/css-1?family=Roboto:300,400,500.css" rel="stylesheet" media="all">
   <link href="https://juliocesar.com.co/css/css?family=Google+Sans:400,500,700.css"rel="stylesheet" media="all">
   <link href="https://juliocesar.com.co/css/main.824aef37aa44ee25eafd.css" rel="stylesheet" media="all">
-
-  
 </head>
 <body class="interior showcase showcase-story" x-data="ScrollSpy" x-on:scroll.window="onScroll" x-bind:class="{ 'in-content': $store.spy.inContent }">
   <header role="banner" x-data="Header()" x-bind:class="{
@@ -26,15 +24,15 @@
       <div class="tray">
         <nav role="navigation">
           <ul>
-            <li> <a href="../marketplace.html" class="btn top-level" @click="handleMobileClick($event)">  <i class="fas fa-caret-down"></i> </a>
+            <li> <a href="../multi-platform.html" class="btn top-level" @click="handleMobileClick($event)"> Multi-Platform <i class="fas fa-caret-down"></i> </a>
               <div class="dd-connector"></div>
               <div class="dd">
                 <ul>
-                  <li class="mobile-only"><a class="btn" href="../marketplace.html">Overview</a></li>
-                  <li><a class="btn" href="../marketplace/mobile.html">Mobile</a></li>
-                  <li><a class="btn" href="../marketplace/web.html">Web</a></li>
-                  <li><a class="btn" href="../marketplace/desktop.html">Desktop</a></li>
-                  <li><a class="btn" href="../marketplace/embedded.html">Embedded</a></li>
+                  <li class="mobile-only"><a class="btn" href="../multi-platform.html">Overview</a></li>
+                  <li><a class="btn" href="../multi-platform/mobile.html">Mobile</a></li>
+                  <li><a class="btn" href="../multi-platform/web.html">Web</a></li>
+                  <li><a class="btn" href="../multi-platform/desktop.html">Desktop</a></li>
+                  <li><a class="btn" href="../multi-platform/embedded.html">Embedded</a></li>
                 </ul>
               </div>
             </li>
@@ -44,7 +42,7 @@
                 <ul>
                   <li class="mobile-only"><a class="btn" href="../development.html">Overview</a></li>
                   <li><a class="btn" href="../learn.html">Learn</a></li>
-                  <li><a class="btn" href="https://docs.juliocesar.com.co/development/packages-and-plugins/favorites" target="_blank">Flutter Favorites</a></li>
+                  <li><a class="btn" href="https://docs.flutter.dev/development/packages-and-plugins/favorites" target="_blank">Flutter Favorites</a></li>
                   <li><a class="btn" href="https://pub.dev" target="_blank">Packages</a></li>
                   <li><a class="btn" href="../monetization.html">Monetization</a></li>
                   <li><a class="btn" href="../games.html">Games</a></li>
@@ -64,32 +62,32 @@
               </div>
             </li>
             <li> <a href="../showcase.html" class="btn top-level"> Showcase </a> </li>
-            <li> <a href="https://docs.juliocesar.com.co" class="btn top-level" @click="handleMobileClick($event)"> Docs <i class="fas fa-caret-down"></i> </a>
+            <li> <a href="https://docs.flutter.dev" class="btn top-level" @click="handleMobileClick($event)"> Docs <i class="fas fa-caret-down"></i> </a>
               <div class="dd-connector"></div>
               <div class="dd dd-double">
                 <ul>
-                  <li class="mobile-only"><a class="btn" href="https://docs.juliocesar.com.co">Overview</a></li>
-                  <li><a class="btn" href="https://docs.juliocesar.com.co/whats-new">What's new</a></li>
-                  <li><a class="btn" href="https://docs.juliocesar.com.co/get-started/editor">Editor support</a></li>
-                  <li><a class="btn" href="https://docs.juliocesar.com.co/development/tools/hot-reload">Hot reload</a></li>
-                  <li><a class="btn" href="https://docs.juliocesar.com.co/perf/ui-performance">Profiling</a></li>
+                  <li class="mobile-only"><a class="btn" href="https://docs.flutter.dev">Overview</a></li>
+                  <li><a class="btn" href="https://docs.flutter.dev/whats-new">What's new</a></li>
+                  <li><a class="btn" href="https://docs.flutter.dev/get-started/editor">Editor support</a></li>
+                  <li><a class="btn" href="https://docs.flutter.dev/development/tools/hot-reload">Hot reload</a></li>
+                  <li><a class="btn" href="https://docs.flutter.dev/perf/ui-performance">Profiling</a></li>
                 </ul>
                 <ul>
-                  <li><a class="btn" href="https://docs.juliocesar.com.co/get-started/install">Install Flutter</a></li>
-                  <li><a class="btn" href="https://docs.juliocesar.com.co/development/tools/devtools/overview">DevTools</a></li>
-                  <li><a class="btn" href="https://docs.juliocesar.com.co/cookbook">Cookbook</a></li>
-                  <li><a class="btn" href="https://docs.juliocesar.com.co/reference/tutorials">Tutorials</a></li>
+                  <li><a class="btn" href="https://docs.flutter.dev/get-started/install">Install Flutter</a></li>
+                  <li><a class="btn" href="https://docs.flutter.dev/development/tools/devtools/overview">DevTools</a></li>
+                  <li><a class="btn" href="https://docs.flutter.dev/cookbook">Cookbook</a></li>
+                  <li><a class="btn" href="https://docs.flutter.dev/reference/tutorials">Tutorials</a></li>
                 </ul>
               </div>
             </li>
           </ul>
         </nav>
         <div class="icon-btn search" x-bind:class="{ 'active': searchActive || navOpen }"> <i class="fas fa-search search-icon" @click="toggleSearch($event)"> </i>
-          <form action="https://docs.juliocesar.com.co/search">
+          <form action="https://docs.flutter.dev/search">
             <input type="search" placeholder="Search..." aria-label="Search" name="q" id="q" autocomplete="off">
           </form>
           <i class="fas fa-times" @click="toggleSearch($event)" x-show="searchActive"> </i> </div>
-        <a href="https://docs.juliocesar.com.co/get-started/install" id="get-started__header" class="btn">Get started</a> <a href="../events/flutter-forward.html" id="flutter-forward__header" class="btn">Flutter Forward</a>
+        <a href="https://docs.flutter.dev/get-started/install" id="get-started__header" class="btn">Get started</a> <a href="../events/flutter-forward.html" id="flutter-forward__header" class="btn">Flutter Forward</a>
         <div class="icon-btn hamburger" x-show="!navOpen" @click="toggleMobileNav"> <i class="fas fa-bars fa-lg" aria-hidden="true"></i> </div>
         <div class="icon-btn close" x-show="navOpen" @click="toggleMobileNav"> <i class="fas fa-times fa-lg"></i> </div>
       </div>
@@ -104,24 +102,24 @@
       <div class="footer-links">
         <ul>
           <li>About Flutter</li>
-          <li><a href="https://docs.juliocesar.com.co/jobs" target="_blank">Careers</a></li>
+          <li><a href="https://docs.flutter.dev/jobs" target="_blank">Careers</a></li>
           <li><a href="https://medium.com/flutter" target="_blank">News</a></li>
           <li><a href="../brand.html">Brand</a></li>
           <li><a href="../culture.html">Culture</a></li>
         </ul>
         <ul>
           <li>Learn Flutter</li>
-          <li><a href="https://events.juliocesar.com.co/engage/learn/beginner" target="_blank">Learning Journey</a></li>
-          <li><a href="https://docs.juliocesar.com.co/codelabs" target="_blank">Codelabs</a></li>
+          <li><a href="https://events.flutter.dev/engage/learn/beginner" target="_blank">Learning Journey</a></li>
+          <li><a href="https://docs.flutter.dev/codelabs" target="_blank">Codelabs</a></li>
           <li><a href="https://flutter.github.io/samples" target="_blank">Samples</a></li>
-          <li><a href="https://docs.juliocesar.com.co/cookbook" target="_blank">Cookbook</a></li>
+          <li><a href="https://docs.flutter.dev/cookbook" target="_blank">Cookbook</a></li>
         </ul>
         <ul>
-          <li></li>
-          <li><a href="../marketplace/mobile.html">Mobile</a></li>
-          <li><a href="../marketplace/web.html">Web</a></li>
-          <li><a href="../marketplace/desktop.html">Desktop</a></li>
-          <li><a href="../marketplace/embedded.html">Embedded</a></li>
+          <li>Multi-Platform</li>
+          <li><a href="../multi-platform/mobile.html">Mobile</a></li>
+          <li><a href="../multi-platform/web.html">Web</a></li>
+          <li><a href="../multi-platform/desktop.html">Desktop</a></li>
+          <li><a href="../multi-platform/embedded.html">Embedded</a></li>
         </ul>
       </div>
     </div>
@@ -132,9 +130,9 @@
       <div>Except as otherwise noted, this work is licensed under a Creative Commons Attribution 4.0 International License, and code samples are licensed under the BSD License.</div>
       <div>
         <ul>
-          <li><a href="https://docs.juliocesar.com.co/tos">Terms</a></li>
-          <li><a href="https://policies.google.com/privacy?hl=es" target="_blank">Privacy</a></li>
-          <li><a href="https://docs.juliocesar.com.co/security">Security</a></li>
+          <li><a href="https://docs.flutter.dev/tos">Terms</a></li>
+          <li><a href="https://policies.google.com/privacy?hl=en" target="_blank">Privacy</a></li>
+          <li><a href="https://docs.flutter.dev/security">Security</a></li>
         </ul>
       </div>
     </div>
