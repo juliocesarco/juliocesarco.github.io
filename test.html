@@ -19,8 +19,8 @@
 <body class="interior showcase showcase-story" x-data="ScrollSpy" x-on:scroll.window="onScroll" x-bind:class="{ 'in-content': $store.spy.inContent }">
   <header role="banner" x-data="Header()" x-bind:class="{
       'hide': !navOpen && $store.spy.inHomeHero,
-      'mobile': isMobile, 
-      'mobile-nav-open': navOpen, 
+      'exito': isMobile, 
+      'exito-nav-open': navOpen, 
       'searching': searchActive,
     }" x-on:resize.window.debounce.200="onResize">
     <div class="content">
@@ -35,11 +35,11 @@
               <div class="dd-connector"></div>
               <div class="dd">
                 <ul>
-                  <li class="mobile-only"><a class="btn" href="../marketplace.html">Overview</a></li>
-                  <li><a class="btn" href="../marketplace/mobile.html">Mobile</a></li>
-                  <li><a class="btn" href="../marketplace/web.html">Web</a></li>
-                  <li><a class="btn" href="../marketplace/desktop.html">Desktop</a></li>
-                  <li><a class="btn" href="../marketplace/embedded.html">Embedded</a></li>
+                  <li class="exito-only"><a class="btn" href="../marketplace.html">Overview</a></li>
+                  <li><a class="btn" href="../marketplace/exito.html">Exito</a></li>
+                  <li><a class="btn" href="../marketplace/carulla.html">Carulla</a></li>
+                  <li><a class="btn" href="../marketplace/olx.html">Olx</a></li>
+                  <li><a class="btn" href="../marketplace/facebook.html">Facebook</a></li>
                 </ul>
               </div>
             </li>
@@ -47,7 +47,7 @@
               <div class="dd-connector"></div>
               <div class="dd">
                 <ul>
-                  <li class="mobile-only"><a class="btn" href="../development.html">Overview</a></li>
+                  <li class="exito-only"><a class="btn" href="../development.html">Overview</a></li>
                   <li><a class="btn" href="../learn.html">Learn</a></li>
                   <li><a class="btn" href="https://juliocesar.com.co/development/packages-and-plugins/favorites" target="_blank">JulioCesar Favorites</a></li>
                   <li><a class="btn" href="https://pub.dev" target="_blank">Packages</a></li>
@@ -61,7 +61,7 @@
               <div class="dd-connector"></div>
               <div class="dd">
                 <ul>
-                  <li class="mobile-only"><a class="btn" href="../ecosystem.html">Overview</a></li>
+                  <li class="exito-only"><a class="btn" href="../ecosystem.html">Overview</a></li>
                   <li><a class="btn" href="../community.html">Community</a></li>
                   <li><a class="btn" href="../events.html">Events</a></li>
                   <li><a class="btn" href="../cultura.html">Cultura</a></li>
@@ -73,7 +73,7 @@
               <div class="dd-connector"></div>
               <div class="dd dd-double">
                 <ul>
-                  <li class="mobile-only"><a class="btn" href="https://juliocesar.com.co">Overview</a></li>
+                  <li class="exito-only"><a class="btn" href="https://juliocesar.com.co">Overview</a></li>
                   <li><a class="btn" href="https://juliocesar.com.co/whats-new">What's new</a></li>
                   <li><a class="btn" href="https://juliocesar.com.co/get-started/editor">Editor support</a></li>
                   <li><a class="btn" href="https://juliocesar.com.co/development/tools/hot-reload">Hot reload</a></li>
@@ -123,10 +123,10 @@
         </ul>
         <ul>
           <li>Marketplace</li>
-          <li><a href="../marketplace/mobile">Mobile</a></li>
-          <li><a href="../marketplace/web">Web</a></li>
-          <li><a href="../marketplace/desktop">Desktop</a></li>
-          <li><a href="../marketplace/embedded">Embedded</a></li>
+          <li><a href="../marketplace/exito">Exito</a></li>
+          <li><a href="../marketplace/carulla">Carulla</a></li>
+          <li><a href="../marketplace/olx">Olx</a></li>
+          <li><a href="../marketplace/facebook">Facebook</a></li>
         </ul>
       </div>
     </div>
