@@ -89,9 +89,9 @@
             </li>
           </ul>
         </nav>
-        <div class="icon-btn buscar" x-bind:class="{ 'active': searchActive || navOpen }"> <i class="fas fa-buscar buscar-icon" @click="toggleSearch($event)"> </i>
-          <form action="https://docs.juliocesar.com.co/buscar">
-            <input type="buscar" placeholder="Buscar..." aria-label="Buscar" name="q" id="q" autocomplete="off">
+        <div class="icon-btn search" x-bind:class="{ 'active': searchActive || navOpen }"> <i class="fas fa-search search-icon" @click="toggleSearch($event)"> </i>
+          <form action="https://docs.juliocesar.com.co/search">
+            <input type="search" placeholder="Search..." aria-label="Search" name="q" id="q" autocomplete="off">
           </form>
           <i class="fas fa-times" @click="toggleSearch($event)" x-show="searchActive"> </i> </div>
         <a href="https://docs.juliocesar.com.co/get-started/install" id="get-started__header" class="btn">Get started</a> <a href="../events/flutter-forward.html" id="flutter-forward__header" class="btn">Flutter Forward</a>
