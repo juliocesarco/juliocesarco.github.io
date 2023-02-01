@@ -44,7 +44,7 @@ let d;a.titleText=null!=(d=b.title)?d:"";let e;a.updatedDate=null!=(e=b.updateTi
 O3=class extends _ds.Hu{constructor(){super(["devsite-card","devsite-dialog","devsite-dropdown-list","devsite-mwc"]);this.fullHeight=this.editable=this.autofetch=!1;this.mode="details";this.showModal=!1;this.singleAttribute=null;this.qo="edit";this.updatedDate=this.titleText=this.name=this.count=this.description="";this.isEmailAlertsEnabled=!1;this.locale="es";this.titleUrl="";this.m=null;this.eventHandler=new _ds.x;this.j=new _ds.XH;this.h=new _ds.XH}static get styles(){return oia}async connectedCallback(){super.connectedCallback();
 qia(this);this.autofetch&&await ria(this);const a=(await _ds.r()).getLocale();a&&(this.locale=a)}disconnectedCallback(){super.disconnectedCallback();let a;null==(a=this.m)||a.removeAttribute("open");_ds.A(this.eventHandler)}eb(){this.m=this.shadowRoot.querySelector("devsite-dialog")}updated(a){if(a.has("showModal")&&this.showModal){let b;null==(b=this.m)||b.setAttribute("open","")}}render(){return(0,_ds.O)`
       ${L3(this.mode,[["card",()=>sia(this)],["details",()=>N3(this)],["single-attribute",()=>tia(this)]],()=>N3(this))}
-      ${_ds.Er("single-attribute"!==this.mode,()=>{if("delete"===this.qo){var a=(new _ds.qS("You are about to delete {COLLECTION_TITLE}. This can't be undone later. Are you sure?")).format({COLLECTION_TITLE:this.titleText});a=(0,_ds.O)`
+      ${_ds.Er("single-attribute"!==this.mode,()=>{if("delete"===this.qo){var a=(new _ds.qS("You are sobre to delete {COLLECTION_TITLE}. This can't be undone later. Are you sure?")).format({COLLECTION_TITLE:this.titleText});a=(0,_ds.O)`
         <div class="devsite-dialog-contents delete-confirm">
           <h3>${"Confirmation"}</h3>
           <p>${a}</p>
