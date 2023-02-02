@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+    <script>
+        function load_header() {
+            document.getElementById("contenidoHeader").innerHTML='<object type="text/html" data="src/build/header.html" ></object>';
+        }   
+    </script>
+
     <meta charset="UTF-8">
     <meta name="referrer" content="no-referrer">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover">
@@ -11,6 +18,14 @@
     <link rel="canonical" href="https://juliocesar.com.co/opticadistrivision">
     <meta name="keywords" content="@juliocesar, #juliocesar, julio cesar en cali, juliocesar.com.co, julio cesar, juliocesar, cali valle del cauca, colombia">
 </head>
+
+<header>
+    <div id="contenidoHeader"></div>
+    <script>
+        load_header();
+    </script>
+</header>
+
 <body class="normal pc_body">
 <header class="header"> <img class="logo" src="https://juliocesar.com.co/devrel-devsite/images/juliocesar-logo.png" alt="Colombia"> </header>
 <div class="container">
