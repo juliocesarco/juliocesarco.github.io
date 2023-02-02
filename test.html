@@ -1,153 +1,151 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-
-  <link rel="preconnect" href="//juliocesar.com.co" crossorigin>
-  <link rel="shortcut icon" href="https://juliocesar.com.co/images/favicons/favicon.ico">
-  <link rel="apple-touch-icon" href="https://juliocesar.com.co/images/favicons/favicon-196x196.png">
-  <link rel="shortcut icon" href="https://juliocesar.com.co/images/favicons/favicon-96x96.png">
-  <link rel="shortcut icon" href="https://juliocesar.com.co/images/favicons/favicon-32x32.png">
-  <link href="https://juliocesar.com.co/css/css-1?family=Roboto:300,400,500.css" rel="stylesheet" media="all">
-  <link href="https://juliocesar.com.co/css/css?family=Google+Sans:400,500,700.css"rel="stylesheet" media="all">
-  <link href="https://juliocesar.com.co/css/main.824aef37aa44ee25eafd.css" rel="stylesheet" media="all">
-  <script async="" defer="" src="https://juliocesar.com.co/js/all.js" data-auto-replace-svg="nest"></script>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<link rel="preconnect" href="//juliocesar.com.co" crossorigin>
+<link rel="shortcut icon" href="https://juliocesar.com.co/images/favicons/favicon.ico">
+<link rel="apple-touch-icon" href="https://juliocesar.com.co/images/favicons/favicon-196x196.png">
+<link rel="shortcut icon" href="https://juliocesar.com.co/images/favicons/favicon-96x96.png">
+<link rel="shortcut icon" href="https://juliocesar.com.co/images/favicons/favicon-32x32.png">
+<link href="https://juliocesar.com.co/css/css-1?family=Roboto:300,400,500.css" rel="stylesheet" media="all">
+<link href="https://juliocesar.com.co/css/css?family=Google+Sans:400,500,700.css"rel="stylesheet" media="all">
+<link href="https://juliocesar.com.co/css/main.824aef37aa44ee25eafd.css" rel="stylesheet" media="all">
+<script async="" defer="" src="https://juliocesar.com.co/js/all.js" data-auto-replace-svg="nest"></script>
 </head>
 <body class="interior showcase showcase-story" x-data="ScrollSpy" x-on:scroll.window="onScroll" x-bind:class="{ 'in-content': $store.spy.inContent }">
-  <header role="banner" x-data="Header()" x-bind:class="{
+<header role="banner" x-data="Header()" x-bind:class="{
       'hide': !navOpen && $store.spy.inHomeHero,
       'exito': isMobile, 
       'exito-nav-open': navOpen, 
       'searching': searchActive,
     }" x-on:resize.window.debounce.200="onResize">
-    <div class="content">
-      <div>
-        <div class="logo logo-white"> <a href="../index"> <img src="../cms-storage-bucket/ec64036b4eacc9f3fd73.svg" alt="JulioCesar"> </a> </div>
-        <div class="logo logo-normal"> <a href="../index"> <img src="../cms-storage-bucket/6a07d8a62f4308d2b854.svg" alt="JulioCesar"> </a> </div>
-      </div>
-      <div class="tray">
-        <nav role="navigation">
-          <ul>
-            <li> <a href="../marketplace" class="btn top-level" @click="handleMobileClick($event)"> Marketplace <i class="fas fa-caret-down"></i> </a>
-              <div class="dd-connector"></div>
-              <div class="dd">
-                <ul>
-                  <li class="mobile-only"><a class="btn" href="../marketplace">Ver Más</a></li>
-                  <li><a class="btn" href="../marketplace/exito">Exito</a></li>
-                  <li><a class="btn" href="../marketplace/carulla">Carulla</a></li>
-                  <li><a class="btn" href="../marketplace/olx">Olx</a></li>
-                  <li><a class="btn" href="../marketplace/facebook">Facebook</a></li>
-                </ul>
-              </div>
-            </li>
-            <li> <a href="../development" class="btn top-level" @click="handleMobileClick($event)"> Development <i class="fas fa-caret-down"></i> </a>
-              <div class="dd-connector"></div>
-              <div class="dd">
-                <ul>
-                  <li class="mobile-only"><a class="btn" href="../development">Ver Más</a></li>
-                  <li><a class="btn" href="../learn">Learn</a></li>
-                  <li><a class="btn" href="https://juliocesar.com.co/development/packages-and-plugins/favorites" target="_blank">JulioCesar Favorites</a></li>
-                  <li><a class="btn" href="https://pub.dev" target="_blank">Packages</a></li>
-                  <li><a class="btn" href="../monetization">Monetization</a></li>
-                  <li><a class="btn" href="../games">Games</a></li>
-                  <li><a class="btn" href="../novedades">Novedades</a></li>
-                </ul>
-              </div>
-            </li>
-            <li> <a href="../ecosystem" class="btn top-level" @click="handleMobileClick($event)"> Ecosystem <i class="fas fa-caret-down"></i> </a>
-              <div class="dd-connector"></div>
-              <div class="dd">
-                <ul>
-                  <li class="mobile-only"><a class="btn" href="../ecosystem">Ver Más</a></li>
-                  <li><a class="btn" href="../community">Community</a></li>
-                  <li><a class="btn" href="../eventos">Eventos</a></li>
-                  <li><a class="btn" href="../cultura">Cultura</a></li>
-                </ul>
-              </div>
-            </li>
-            <li> <a href="../showcase" class="btn top-level"> Showcase </a> </li>
-            <li> <a href="https://juliocesar.com.co" class="btn top-level" @click="handleMobileClick($event)"> Docs <i class="fas fa-caret-down"></i> </a>
-              <div class="dd-connector"></div>
-              <div class="dd dd-double">
-                <ul>
-                  <li class="mobile-only"><a class="btn" href="https://juliocesar.com.co">Ver Más</a></li>
-                  <li><a class="btn" href="https://juliocesar.com.co/whats-new">What's new</a></li>
-                  <li><a class="btn" href="https://juliocesar.com.co/get-started/editor">Editor support</a></li>
-                  <li><a class="btn" href="https://juliocesar.com.co/development/tools/hot-reload">Hot reload</a></li>
-                  <li><a class="btn" href="https://juliocesar.com.co/perf/ui-performance">Profiling</a></li>
-                </ul>
-                <ul>
-                  <li><a class="btn" href="https://juliocesar.com.co/get-started/install">Install JulioCesar</a></li>
-                  <li><a class="btn" href="https://juliocesar.com.co/development/tools/devtools/overview">DevTools</a></li>
-                  <li><a class="btn" href="https://juliocesar.com.co/cookbook">Cookbook</a></li>
-                  <li><a class="btn" href="https://juliocesar.com.co/reference/tutorials">Tutorials</a></li>
-                </ul>
-              </div>
-            </li>
-          </ul>
-        </nav>
-        <div class="icon-btn search" x-bind:class="{ 'active': searchActive || navOpen }"> <i class="fas fa-search search-icon" @click="toggleSearch($event)"> </i>
-          <form action="https://juliocesar.com.co/search">
-            <input type="search" placeholder="Buscar en JulioCesar.com.co" aria-label="Search" name="q" id="q" autocomplete="off">
-          </form>
-          <i class="fas fa-times" @click="toggleSearch($event)" x-show="searchActive"> </i> </div>
-        <a href="/" id="get-started__header" class="btn">Contacto</a> <a href="../eventos" id="flutter-forward__header" class="btn">JulioCesar Social</a>
-        <div class="icon-btn hamburger" x-show="!navOpen" @click="toggleMobileNav"> <i class="fas fa-bars fa-lg" aria-hidden="true"></i> </div>
-        <div class="icon-btn close" x-show="navOpen" @click="toggleMobileNav"> <i class="fas fa-times fa-lg"></i> </div>
-      </div>
+  <div class="content">
+    <div>
+      <div class="logo logo-white"> <a href="../index"> <img src="../cms-storage-bucket/ec64036b4eacc9f3fd73.svg" alt="JulioCesar"> </a> </div>
+      <div class="logo logo-normal"> <a href="../index"> <img src="../cms-storage-bucket/6a07d8a62f4308d2b854.svg" alt="JulioCesar"> </a> </div>
     </div>
-  </header>
-  <main>
-    <section id="story"> </section>
-  </main>
-  <footer>
-    <div class="content footer-main">
-      <div class="logo"> <a href="../index"> <img src="../cms-storage-bucket/6a07d8a62f4308d2b854.svg" width="154" alt="JulioCesar"> </a> </div>
-      <div class="footer-links">
+    <div class="tray">
+      <nav role="navigation">
         <ul>
-          <li>Sobre JulioCesar</li>
-          <li><a href="../empleo" target="_blank">Empleo</a></li>
-          <li><a href="../novedades" target="_blank">Novedades</a></li>
-          <li><a href="../marca">Marca</a></li>
-          <li><a href="../cultura">Cultura</a></li>
+          <li> <a href="../marketplace" class="btn top-level" @click="handleMobileClick($event)"> Marketplace <i class="fas fa-caret-down"></i> </a>
+            <div class="dd-connector"></div>
+            <div class="dd">
+              <ul>
+                <li class="mobile-only"><a class="btn" href="../marketplace">Ver Más</a></li>
+                <li><a class="btn" href="../marketplace/exito">Exito</a></li>
+                <li><a class="btn" href="../marketplace/carulla">Carulla</a></li>
+                <li><a class="btn" href="../marketplace/olx">Olx</a></li>
+                <li><a class="btn" href="../marketplace/facebook">Facebook</a></li>
+              </ul>
+            </div>
+          </li>
+          <li> <a href="../development" class="btn top-level" @click="handleMobileClick($event)"> Development <i class="fas fa-caret-down"></i> </a>
+            <div class="dd-connector"></div>
+            <div class="dd">
+              <ul>
+                <li class="mobile-only"><a class="btn" href="../development">Ver Más</a></li>
+                <li><a class="btn" href="../learn">Learn</a></li>
+                <li><a class="btn" href="https://juliocesar.com.co/development/packages-and-plugins/favorites" target="_blank">JulioCesar Favorites</a></li>
+                <li><a class="btn" href="https://pub.dev" target="_blank">Packages</a></li>
+                <li><a class="btn" href="../monetization">Monetization</a></li>
+                <li><a class="btn" href="../games">Games</a></li>
+                <li><a class="btn" href="../novedades">Novedades</a></li>
+              </ul>
+            </div>
+          </li>
+          <li> <a href="../ecosystem" class="btn top-level" @click="handleMobileClick($event)"> Ecosystem <i class="fas fa-caret-down"></i> </a>
+            <div class="dd-connector"></div>
+            <div class="dd">
+              <ul>
+                <li class="mobile-only"><a class="btn" href="../ecosystem">Ver Más</a></li>
+                <li><a class="btn" href="../community">Community</a></li>
+                <li><a class="btn" href="../eventos">Eventos</a></li>
+                <li><a class="btn" href="../cultura">Cultura</a></li>
+              </ul>
+            </div>
+          </li>
+          <li> <a href="../showcase" class="btn top-level"> Showcase </a> </li>
+          <li> <a href="https://juliocesar.com.co" class="btn top-level" @click="handleMobileClick($event)"> Docs <i class="fas fa-caret-down"></i> </a>
+            <div class="dd-connector"></div>
+            <div class="dd dd-double">
+              <ul>
+                <li class="mobile-only"><a class="btn" href="https://juliocesar.com.co">Ver Más</a></li>
+                <li><a class="btn" href="https://juliocesar.com.co/whats-new">What's new</a></li>
+                <li><a class="btn" href="https://juliocesar.com.co/get-started/editor">Editor support</a></li>
+                <li><a class="btn" href="https://juliocesar.com.co/development/tools/hot-reload">Hot reload</a></li>
+                <li><a class="btn" href="https://juliocesar.com.co/perf/ui-performance">Profiling</a></li>
+              </ul>
+              <ul>
+                <li><a class="btn" href="https://juliocesar.com.co/get-started/install">Install JulioCesar</a></li>
+                <li><a class="btn" href="https://juliocesar.com.co/development/tools/devtools/overview">DevTools</a></li>
+                <li><a class="btn" href="https://juliocesar.com.co/cookbook">Cookbook</a></li>
+                <li><a class="btn" href="https://juliocesar.com.co/reference/tutorials">Tutorials</a></li>
+              </ul>
+            </div>
+          </li>
         </ul>
-        <ul>
-          <li>Información Legal
-</li>
-          <li><a href="https://juliocesar.com.co/sic" target="_blank">Superintendencia de Industria y Comercio SIC</a></li>
-          <li><a href="https://juliocesar.com.co/dian" target="_blank">Dirección de Impuestos y Aduanas Nacionales DIAN</a></li>
-        </ul>
-        <ul>
-          <li>Marketplace</li>
-          <li><a href="../marketplace/exito">Exito</a></li>
-          <li><a href="../marketplace/carulla">Carulla</a></li>
-          <li><a href="../marketplace/olx">Olx</a></li>
-          <li><a href="../marketplace/facebook">Facebook</a></li>
-        </ul>
-      </div>
+      </nav>
+      <div class="icon-btn search" x-bind:class="{ 'active': searchActive || navOpen }"> <i class="fas fa-search search-icon" @click="toggleSearch($event)"> </i>
+        <form action="https://juliocesar.com.co/search">
+          <input type="search" placeholder="Buscar en JulioCesar.com.co" aria-label="Search" name="q" id="q" autocomplete="off">
+        </form>
+        <i class="fas fa-times" @click="toggleSearch($event)" x-show="searchActive"> </i> </div>
+      <a href="/" id="get-started__header" class="btn">Contacto</a> <a href="../eventos" id="flutter-forward__header" class="btn">JulioCesar Social</a>
+      <div class="icon-btn hamburger" x-show="!navOpen" @click="toggleMobileNav"> <i class="fas fa-bars fa-lg" aria-hidden="true"></i> </div>
+      <div class="icon-btn close" x-show="navOpen" @click="toggleMobileNav"> <i class="fas fa-times fa-lg"></i> </div>
     </div>
-    <div class="content footer-social">
-      <div> <a href="https://www.youtube.com/@blogjuliocesar" target="_blank" aria-label="JulioCesar YouTube"> <i class="fab fa-youtube fa-lg"></i> </a> <a href="https://twitter.com/blogjuliocesar" target="_blank" aria-label="JulioCesar Twittter"> <i class="fab fa-twitter fa-lg"></i> </a> <a href="https://github.com/juliocesarcomco" target="_blank" aria-label="JulioCesar Github"> <i class="fab fa-github fa-lg"></i> </a> <a href="/" target="_blank" aria-label="JulioCesar Medium"> <i class="fab fa-medium fa-lg"></i> </a> <a href="/" target="_blank" aria-label="JulioCesar Meetup"> <i class="fab fa-meetup fa-lg"></i> </a> <a href="https://www.linkedin.com/in/blogjuliocesar" target="_blank" aria-label="JulioCesar LinkedIn"> <i class="fab fa-linkedin fa-lg"></i> </a> </div>
+  </div>
+</header>
+<main>
+  <section id="story"> </section>
+</main>
+<footer>
+  <div class="content footer-main">
+    <div class="logo"> <a href="../index"> <img src="../cms-storage-bucket/6a07d8a62f4308d2b854.svg" width="154" alt="JulioCesar"> </a> </div>
+    <div class="footer-links">
+      <ul>
+        <li>Marketplace</li>
+        <li><a href="../marketplace/exito">Exito</a></li>
+        <li><a href="../marketplace/carulla">Carulla</a></li>
+        <li><a href="../marketplace/olx">Olx</a></li>
+        <li><a href="../marketplace/facebook">Facebook</a></li>
+      </ul>
+      <ul>
+        <li>Sobre JulioCesar</li>
+        <li><a href="../empleo" target="_blank">Empleo</a></li>
+        <li><a href="../novedades" target="_blank">Novedades</a></li>
+        <li><a href="../marca">Marca</a></li>
+        <li><a href="../cultura">Cultura</a></li>
+      </ul>
+      <ul>
+        <li>Información Legal </li>
+        <li><a href="https://juliocesar.com.co/sic" target="_blank">Superintendencia de Industria y Comercio SIC</a></li>
+        <li><a href="https://juliocesar.com.co/dian" target="_blank">Dirección de Impuestos y Aduanas Nacionales DIAN</a></li>
+      </ul>
+</div>
+  </div>
+  <div class="content footer-social">
+    <div> <a href="https://www.youtube.com/@blogjuliocesar" target="_blank" aria-label="JulioCesar YouTube"> <i class="fab fa-youtube fa-lg"></i> </a> <a href="https://twitter.com/blogjuliocesar" target="_blank" aria-label="JulioCesar Twittter"> <i class="fab fa-twitter fa-lg"></i> </a> <a href="https://github.com/juliocesarcomco" target="_blank" aria-label="JulioCesar Github"> <i class="fab fa-github fa-lg"></i> </a> <a href="/" target="_blank" aria-label="JulioCesar Medium"> <i class="fab fa-medium fa-lg"></i> </a> <a href="/" target="_blank" aria-label="JulioCesar Meetup"> <i class="fab fa-meetup fa-lg"></i> </a> <a href="https://www.linkedin.com/in/blogjuliocesar" target="_blank" aria-label="JulioCesar LinkedIn"> <i class="fab fa-linkedin fa-lg"></i> </a> </div>
+  </div>
+  <div class="content footer-tray">
+    <div>Copyright © 2018 - 2023 JulioCesar™. Todos los derechos reservados. Las Marcas JulioCesar™, SurtiLED® son Marcas registradas de Julio Cesar, en Colombia. El logo "JulioCesar™" es una Marca comercial registrada de JulioCesar.com.co, en Colombia.</div>
+    <div>
+      <ul>
+        <li><a href="https://juliocesar.com.co/terminos">Términos</a></li>
+        <li><a href="https://juliocesar.com.co/privacidad">Privacidad</a></li>
+        <li><a href="https://juliocesar.com.co/seguridad">Seguridad</a></li>
+      </ul>
     </div>
-    <div class="content footer-tray">
-      <div>Copyright © 2018 - 2023 JulioCesar™. Todos los derechos reservados. Las Marcas JulioCesar™, SurtiLED® son Marcas registradas de Julio Cesar, en Colombia. El logo "JulioCesar™" es una Marca comercial registrada de JulioCesar.com.co, en Colombia.</div>
-      <div>
-        <ul>
-          <li><a href="https://juliocesar.com.co/terminos">Términos</a></li>
-          <li><a href="https://juliocesar.com.co/privacidad">Privacidad</a></li>
-          <li><a href="https://juliocesar.com.co/seguridad">Seguridad</a></li>
-        </ul>
-      </div>
-    </div>
-  </footer>
-  <section class="cookie-snack" x-data="CookieSnack" x-bind:class="{ 'show': !agreed }">
-    <div class="container">
-      <p>El uso de este sitio está sujeto a las condiciones de uso expresas. Al utilizar este sitio, tú indicas que aceptas cumplir con estos <a href="/" target="_blank" rel="noopener">Términos universales de servicio...</a> </p>
-      <button @click.prevent="consent" class="solid">Ok</button>
-    </div>
-  </section>
-  </body>
+  </div>
+</footer>
+<section class="cookie-snack" x-data="CookieSnack" x-bind:class="{ 'show': !agreed }">
+  <div class="container">
+    <p>El uso de este sitio está sujeto a las condiciones de uso expresas. Al utilizar este sitio, tú indicas que aceptas cumplir con estos <a href="/" target="_blank" rel="noopener">Términos universales de servicio...</a> </p>
+    <button @click.prevent="consent" class="solid">Ok</button>
+  </div>
+</section>
+</body>
 </html>
