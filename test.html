@@ -16,7 +16,7 @@
   <link href="https://juliocesar.com.co/css/main.824aef37aa44ee25eafd.css" rel="stylesheet" media="all">
   <script async="" defer="" src="https://juliocesar.com.co/js/all.js" data-auto-replace-svg="nest"></script>
 </head>
-<body class="interior showcase showcase-story" x-data="ScrollSpy" x-on:scroll.window="onScroll" x-bind:class="{ 'in-content': $store.spy.inContent }">
+<body class="interior blog blog-story" x-data="ScrollSpy" x-on:scroll.window="onScroll" x-bind:class="{ 'in-content': $store.spy.inContent }">
   <header role="banner" x-data="Header()" x-bind:class="{
       'hide': !navOpen && $store.spy.inHomeHero,
       'exito': isMobile, 
@@ -68,7 +68,7 @@
                 </ul>
               </div>
             </li>
-            <li> <a href="../showcase.html" class="btn top-level"> Showcase </a> </li>
+            <li> <a href="../blog.html" class="btn top-level"> Blog </a> </li>
             <li> <a href="https://juliocesar.com.co" class="btn top-level" @click="handleMobileClick($event)"> Docs <i class="fas fa-caret-down"></i> </a>
               <div class="dd-connector"></div>
               <div class="dd dd-double">
